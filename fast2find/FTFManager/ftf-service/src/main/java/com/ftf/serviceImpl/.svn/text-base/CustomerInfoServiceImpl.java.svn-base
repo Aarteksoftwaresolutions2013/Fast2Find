@@ -1,0 +1,29 @@
+package com.ftf.serviceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.CustomerInformation;
+import com.ftf.repository.CustomerInfoRepository;
+import com.ftf.service.CustomerInfoService;
+import com.ftf.util.Encryption;
+import com.ftf.util.IConstant;
+
+@Service
+public class CustomerInfoServiceImpl implements CustomerInfoService {
+	@Autowired
+	private CustomerInfoRepository customerInfoRepository;
+
+	@SuppressWarnings("rawtypes")
+	public List custInfoAdd(CustomerInformation userRegistration) {
+		userRegistration.setIsDeleted(IConstant.IS_DELETED_ACTIVE);
+		String amount = userRegistration.getUserType();
+		String s1 = amount.substring(IConstant.removeTotal);
+		userRegistration.setUserType(s1);
+		userRegistration.setPassword(Encryption.encrypt(userRegistration
+				.getPassword()));
+		return customerInfoRepository.custInfoAdd(userRegistration);
+	}
+}

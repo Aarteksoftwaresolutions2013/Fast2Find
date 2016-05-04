@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styleb.css" media="screen">
+</head>
+<body>
+<!-----signup-page----->
+			<div class="top-sign-heading">
+			<h2>Signup Business or Event Page<br />
+			<span>Have account already? </span><a href="signIn.do">Sign in</a></h2>
+			</div><!-----end signup-page----->	
+			<!-----=========================sing business pa==========================--------->
+			<div id="sign-content" class="sign-contents">
+			<h4 align="left">${successMsg}</h4>
+			<h1>Business Info<span class="left-frt">Event Information</span></h1>
+			<form:form method="POST" modelAttribute="BusinessInformation" action="businessSignUpInfo.do"  name="signup_business_form" id="signup-business-form" autocomplete="off" >
+			<ul id="first-left-frm">
+			<li>
+			<label for="buz-name"><span></span></label>
+			<form:input path="businessName" name="buz-name" id="buz-name"  placeholder="Business Name"  required ="autofocus"/>
+			<br>
+			<form:errors path="businessName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="prm-cod"><span></span> </label>
+			<form:input path="promoCode" name="prm-cod" id="prm-cod"  placeholder="Promo Code" />
+			</li>
+			
+			<li>
+			<label for="ownfrs-nam"><span></span></label>
+			<form:input path="ownerFirstName"  name="ownfrs-nam" id="ownfrs-nam" placeholder="Owner First Name"  required ="autofocus"/>
+			<br>
+			<form:errors path="ownerFirstName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="ownlast-nam"><span></span></label>
+			<form:input path="ownerLastName" name="ownlast-nam" id="ownlast-nam"  placeholder="Owner Last Name"  required ="autofocus"/>
+			<br>
+			<form:errors path="ownerLastName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="phn-numbz"><span></span></label>
+			<form:input path="phoneNumber" name="phn-numbz" id="phn-numbz" placeholder="Phone Number"  required ="autofocus" />
+			<br>
+			<form:errors path="phoneNumber" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="buz-add"><span></span></label>
+			<form:input path="location.address" name="buz-add" id="buz-add" placeholder="Business Address"  required ="autofocus"/>
+			<br>
+			<form:errors path="location.address" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="City"><span></span></label>
+			<form:input path="location.cityName" name="City" id="City" placeholder="City" required ="autofocus" />
+			<br>
+			<form:errors path="location.cityName" cssClass="error"></form:errors>
+			</li>
+			
+			
+			<li>
+			<label for="st-province"><span></span></label>
+			<form:input path="location.stateName" name="st-province" id="st-province" placeholder="State/Province" required ="autofocus"/>
+			<br>
+			<form:errors path="location.stateName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="zip-cod"><span></span></label>
+			<form:input path="location.zipCode" name="zip-cod" id="zip-cod" placeholder="Zip Code"  required ="autofocus"/>
+			<br>
+			<form:errors path="location.zipCode" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="Country"><span></span></label>
+			<form:select path="location.country.countryId" id="selectint" >
+			   <form:option value="0" label="Select Country"/>
+						<c:forEach items="${country}" var="refCountry">
+						<form:option value="${refCountry.countryId}" label="${refCountry.countryName}" />
+						</c:forEach>
+	           </form:select>
+			<br>
+			<form:errors path="location.country.countryId" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="email-ad"><span></span></label>
+			<form:input path="EmailId" name="email-ad" id="email-ad" placeholder="Email Address"  required ="autofocus" />
+			<br>
+			<form:errors path="EmailId" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="email-ad"><span></span></label>
+			<input type="email" name="email-ad" id="repeat-email-ad" placeholder="Repeat Email Address" required ="autofocus" />
+			</li>
+			
+			<li>
+			<label><span></span></label>
+			<form:password path="password" name="password" id="password" placeholder="Create Password"  required ="autofocus"/>
+			<br>
+			<form:errors path="password" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label><span></span></label>
+			<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required ="autofocus" />
+			</li>
+			
+			<li>
+			<h1 class="biladr">Billing Address</h1>
+			</li>
+			
+			<li class="ch-as-bz">
+			<input type="checkbox" id="same-as-bz" name="same_as_bz" onclick="copyContent()"/>
+			<label for="same-as-bz" class="s-buzn"><span></span>Same as Business Info</label>
+			</li>
+			
+			<li>
+			<label for="buzz-name"><span></span></label>
+			<form:input path="billingAddress.businessName" name="buzz-name" id="billing-buzz-name" placeholder="Business Name"   required ="autofocus" />
+			<br>
+			<form:errors path="billingAddress.businessName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="ownfrs-nam"><span></span></label>
+			<form:input path="billingAddress.firstName" name="ownfrs-nam" id="billing-ownfrs-nam"  placeholder="Owner First Name" required ="autofocus" />
+			<br>
+			<form:errors path="billingAddress.firstName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="ownlast-nam"><span></span></label>
+			<form:input path="billingAddress.LastName" name="ownlast-nam" id="billing-ownlast-nam"  placeholder="Owner Last Name" required ="autofocus"  />
+			<br>
+			<form:errors path="billingAddress.LastName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="buz-add"><span></span></label>
+			<form:input path="billingAddress.location.address" name="buz-add" id="billing-buz-add" placeholder="Address"  required ="autofocus" />
+			<br>
+			<form:errors path="billingAddress.location.address" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="City"><span></span></label>
+			<form:input path="billingAddress.location.cityName" name="City" id="billing-City" placeholder="City"  required ="autofocus" />
+			<br>
+			<form:errors path="billingAddress.location.cityName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="st-province"><span></span></label>
+			<form:input path="billingAddress.location.stateName" name="st-province" id="billing-st-province" placeholder="State/Province" required ="autofocus"  />
+			<br>
+			<form:errors path="billingAddress.location.stateName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="zip-cod"><span></span></label>
+			<form:input path="billingAddress.location.zipCode" name="zip-cod" id="billing-zip-cod" placeholder="Zip Code"  required ="autofocus" />
+			<br>
+			<form:errors path="billingAddress.location.zipCode" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="Country"><span></span></label>
+			<form:select path="billingAddress.location.country.countryId" id="billing-selectint" >
+				<form:option value="0" label="Select Country"/>
+						<c:forEach items="${country}" var="refCountry">
+						<form:option value="${refCountry.countryId}" label="${refCountry.countryName}" />
+						</c:forEach>
+	        </form:select>	
+			<br>
+			<form:errors path="billingAddress.location.country.countryId" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="email-ad"><span></span></label>
+			<form:input path="billingAddress.emailId" name="email-ad" id="billing-email-ad" placeholder="Email Address" required ="autofocus"  />
+			<br>
+			<form:errors path="billingAddress.emailId" cssClass="error"></form:errors>
+			</li>
+			
+            <li>
+			<label for="email-ad"><span></span></label>
+			<input type="email" name="email-ad" id="billing-repeat-email-ad" placeholder="Repeat Email Address" required />
+			</li>
+			
+			</ul>
+			<hr class="bzin" />
+			<ul id="right-busin-pge">
+			<li>
+			<label for="event-name"><span></span></label>
+			<form:input path="eventInformation.eventName" id="event-name" name="event-name"  placeholder="Event-Name" required ="autofocus" />
+			<br>
+			<form:errors path="eventInformation.eventName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="prm-e-cod"><span></span> </label>
+			<form:input path="eventInformation.promoCode" name="prm-e-cod" id="prm-e-cod" placeholder="Promo Code" />
+			</li>
+			
+			<li>
+			<label for="ownfrs-nam"><span></span></label>
+			<form:input path="eventInformation.eventOwnerFirstName" name="ownfrs-nam" id="ownfrs-nam" placeholder="Owner First Name"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.eventOwnerFirstName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="ownlast-nam"><span></span></label>
+			<form:input path="eventInformation.eventOwnerLastName" name="ownlast-nam" id="ownlast-nam" placeholder="Owner Last Name" required ="autofocus" />
+			<br>
+			<form:errors path="eventInformation.eventOwnerLastName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="phn-numbrz"><span></span></label>
+			<form:input path="eventInformation.phoneNumber" id="phn-numbrz" name="phn-numbrz" placeholder="Phone Number"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.phoneNumber" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="event-addrz"><span></span></label>
+			<form:input path="eventInformation.location.address" id="event-addrz" name="event-addrz" placeholder="Event Address"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.location.address" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="City"><span></span></label>
+			<form:input path="eventInformation.location.cityName" name="City" id="City"  placeholder="City"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.location.cityName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="st-province"><span></span></label>
+			<form:input path="eventInformation.location.stateName" name="st-province" id="st-province" placeholder="State/Province"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.location.stateName" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="zip-cod"><span></span></label>
+			<form:input path="eventInformation.location.zipCode" name="zip-cod" id="zip-cod" placeholder="Zip Code"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.location.zipCode" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="Country"><span></span></label>
+		  <form:select path="eventInformation.location.country.countryId" id="selectint" >
+				        <form:option value="0" label="Select Country"/>
+						<c:forEach items="${country}" var="refCountry">
+						<form:option value="${refCountry.countryId}" label="${refCountry.countryName}" />
+						</c:forEach>
+  		  </form:select>	
+		 <br>
+			<form:errors path="eventInformation.location.country.countryId" cssClass="error"></form:errors>
+		 </li>
+			
+			<li>
+			<label for="email-ad"><span></span></label>
+			 <form:input path="eventInformation.emailId" name="event-email-ad" id="event-email-ad" placeholder="Email Address"  required ="autofocus"/>
+			<br>
+			<form:errors path="eventInformation.emailId" cssClass="error"></form:errors>
+			</li>
+			
+			<li>
+			<label for="email-ad"><span></span></label>
+			<input type="email" name="event-repeat-email-ad" id="event-repeat-email-ad" placeholder="Repeat Email Address" required ="autofocus" />
+			</li>
+			
+			<li class="heading-you">
+			<h1>Your Order</h1>
+			<span class="crty">Create Account</span>
+			</li>
+			
+			<li class="disblck">
+			<form:radiobutton path="orderInformation.amount" id="sign_fee" value="Total=$14.99" onClick="totalForBusiness(this.form)" />
+			<label for="sign_fee"><span></span>Signup fee $14.99/month</label>
+			</li>
+			
+			<li class="disblck">
+			<form:radiobutton path="orderInformation.amount" id="month_fee" value="Total=$149" onClick="totalForBusiness(this.form)" />
+			<label for="month_fee"><span></span>Signup fee $149/year=2 months free</label>
+			</li>
+			
+			<li class="disblck">
+			<form:radiobutton path="orderInformation.amount" id="year_fee" value="Total=$420"  onClick="totalForBusiness(this.form)"/>
+			<label for="year_fee"><span></span>Signup fee $420 for 3 years=8 months free</label>
+			</li>
+			
+			<li>
+			<label for="hddn"><span></span></label>
+			<input type="text" id="hddn" value="Total=$"  />
+			</li>
+			
+			<li>
+			<a href="#" class="crdit">Credit Card</a>
+			<a href="#" class="crdit">Paypal</a>
+			</li>
+			<li class="bylck">
+			<input type="checkbox" id="bycli" name="bycli" />
+			<label for="bycli"><span></span></label>
+			</li>
+			
+			<li>
+			<p class="bylck-para">By clicking submit, I agree and accept Terms and Conditions of the user agreement for Fast2find. Hereby confirming I have read, reviewed and understand the current Fast2find terms and conditions with in this document.</p>
+			</li>
+			<li>
+			<label for="submit-order"><span></span></label>
+			<input type="submit" value="Submit Order" id="submit-order" onclick="return termCondition()" />
+			</li>
+			</ul>
+			</form:form>
+			</div><!------end sign -contents----->
+</body>
+</html>
+	
+			

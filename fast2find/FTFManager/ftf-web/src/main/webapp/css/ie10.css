@@ -1,0 +1,238 @@
+html[data-useragent*='MSIE 10.0']
+
+
+img
+{
+border:0px ;}
+
+a
+{
+border:0px;}
+
+
+html[data-useragent*='MSIE 10.0']
+.serch-locate
+
+{
+border-radius:10px;
+-ms-border-radius:10px;}
+
+html[data-useragent*='MSIE 10.0']
+.serch-locate input
+{
+padding:12px 0 12px 25px ;
+line-height:normal;}
+
+
+html[data-useragent*='MSIE 10.0']
+/* fallback placeholder */
+.placeholder {
+	color: #bbb;
+}
+/* webkit placeholder */
+::-webkit-input-placeholder {
+	color: #bbb;
+}
+html[data-useragent*='MSIE 10.0']
+/* moz placeholder */
+:-moz-placeholder {
+	color: #bbb;
+}
+
+html[data-useragent*='MSIE 10.0']
+:-ms-input-placeholder {
+    color: #bbb !important;
+}
+
+html[data-useragent*='MSIE 10.0']
+.custombb-checkbox input:focus, .custombb-radio input:focus
+{
+border:0 !important ;
+box-shadow:none !important;
+background:none !important;
+padding-right:0 !important;
+}
+
+html[data-useragent*='MSIE 10.0']
+.custombb-checkbox input, .custombb-radio input
+
+{
+border: 0 !important;
+outline: none !important; 
+background:none !important;
+position:absolute;
+top:5px;}
+
+
+
+html[data-useragent*='MSIE 10.0']
+.customaa-checkbox input, .customaa-radio input
+{
+position:absolute;
+top:1px !important;}
+
+
+html[data-useragent*='MSIE 10.0']
+.customaa-checkbox input:focus, .customaa-radio input:focus
+{
+box-shadow:none !important;
+padding-right:0% !important;
+}
+
+html[data-useragent*='MSIE 10.0']
+.customaa-checkbox input:required:valid , .customaa-radio input:required:valid
+{
+box-shadow:none !important;
+border:0px ;
+padding-right:0% !important;}
+
+
+html[data-useragent*='MSIE 10.0']
+#all
+{
+position:absolute;
+top:10px !important;}
+
+html[data-useragent*='MSIE 10.0']
+.check-all-tag label
+{
+position:relative;
+top:20px !important;}
+
+html[data-useragent*='MSIE 10.0']
+.customcc-checkbox input, .customcc-radio input
+{
+position:absolute;
+left:-4px !important;
+top:-4px !important;
+border:0px !important;
+visibility:hidden;}
+
+
+html[data-useragent*='MSIE 10.0']
+.customcc-checkbox input:focus, .customcc-radio input:focus
+{
+padding-right:0% !important;}
+
+html[data-useragent*='MSIE 10.0']
+.quickbk-checkbox input, .quickbk-radio input
+{
+position:absolute;
+top:-2px !important;
+border:0px !important;}
+
+
+html[data-useragent*='MSIE 10.0']
+.quickbk-checkbox input:focus, .quickbk-radio input:focus
+{
+border:0 !important;
+padding-right:0% !important;
+box-shadow:none !important;}
+
+html[data-useragent*='MSIE 10.0']
+.customsignup-checkbox input, .customsignup-radio input
+{
+position:absolute;
+left:4px !important;
+top:-3px !important;
+border:0 !important;
+visibility:hidden;}
+html[data-useragent*='MSIE 10.0']
+.signupglobal-checkbox input, .signupglobal-radio input
+{
+position:absolute;
+left:4px !important;
+top:-3px !important;
+border:0 !important;
+padding-right:0% !important;
+visibility:hidden;}
+
+
+html[data-useragent*='MSIE 10.0']
+.signupglobal-checkbox input:focus, .signupglobal-radio input:focus
+{
+padding-right:0 !important;
+box-shadow:none !important;
+border:0px !important;}
+
+html[data-useragent*='MSIE 10.0']
+.customsign-checkbox input, .customsign-radio input
+{
+position:absolute;
+left:4px !important;
+top: 1px !important;
+border:0 !important;
+box-shadow:none !important;}
+
+
+html[data-useragent*='MSIE 10.0']
+.customsign-checkbox input:focus, .customsign-radio input:focus
+{
+box-shadow:none !important;
+border:0 !important;
+padding-right:0% !important;
+box-shadow:none !important;}
+
+html[data-useragent*='MSIE 10.0']
+.customsgbuh-checkbox input, .customsgbuh-radio input
+{
+position:absolute;
+left:3px !important;
+top:-2px !important;
+border:0px !important;
+box-shadow:none !important;
+padding-right:0% !important;
+visibility:hidden;}
+
+html[data-useragent*='MSIE 10.0']
+.customkha-checkbox input, .customkha-radio input
+{
+float:left;
+border:0 ;}
+
+
+html[data-useragent*='MSIE 10.0']
+.customkha-checkbox input, .customkha-radio input
+{
+position:absolute;
+left:-1px ;
+top:-3px;
+border:0 ;
+visibility:hidden;}
+
+
+html[data-useragent*='MSIE 10.0']
+.customsgbuh-checkbox input:focus, .customsgbuh-radio input:focus
+{
+box-shadow:none !important;
+padding-right:0% !important;
+border:0 !important;}
+
+
+
+label.uip {
+position: relative;
+top: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

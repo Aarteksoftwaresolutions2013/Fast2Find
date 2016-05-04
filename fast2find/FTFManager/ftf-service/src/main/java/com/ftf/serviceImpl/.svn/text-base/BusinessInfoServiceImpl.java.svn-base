@@ -1,0 +1,28 @@
+package com.ftf.serviceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.BusinessInformation;
+import com.ftf.repository.BusinessInfoRepository;
+import com.ftf.service.BusinessInfoService;
+import com.ftf.util.Encryption;
+import com.ftf.util.IConstant;
+
+@Service
+public class BusinessInfoServiceImpl implements BusinessInfoService{
+@Autowired
+private BusinessInfoRepository businessInfoRepository;
+@SuppressWarnings("rawtypes")
+public List addBusinessInfo(BusinessInformation businessInformation) {
+	businessInformation.setIsDeleted(IConstant.IS_DELETED_ACTIVE);
+	String amount=businessInformation.getOrderInformation().getAmount();
+	String s1=amount.substring(IConstant.removeTotal);
+	businessInformation.getOrderInformation().setAmount(s1);
+	businessInformation.setPassword(Encryption.encrypt(businessInformation.getPassword()));
+	businessInformation.getOrderInformation().setType(IConstant.BUSINESS_TYPE);
+	return businessInfoRepository.addBusinessInfo(businessInformation);
+  }	
+}

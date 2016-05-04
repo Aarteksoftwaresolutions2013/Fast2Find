@@ -1,0 +1,255 @@
+/* ============================================== */
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:567px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+. . .
+}
+
+/* ============================================== */
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:479px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+html
+{
+margin:0 auto 0;
+padding:0;}
+
+
+body
+{
+margin:0 auto 0;
+padding:0;
+display:block;
+overflow:hidden;}
+
+
+div#find-location {
+width: 100%;
+padding: 50px 10px 20px 10px;
+}
+
+
+div#top-header {
+padding: 0 10px 0 10px;
+}
+
+div.sign_top {
+float: left;
+margin-left: 30px;
+}
+
+
+
+div.logo {
+float: none;
+width: 32%;
+}
+
+div.logo  img
+{
+display:block;
+margin:0 auto 0;
+padding:0;}
+
+.social-media {
+float: none;
+display: block;
+border-bottom: 1px solid #D1D1D1;
+margin-bottom: 10px;
+padding-left: 45px;
+padding-bottom:20px;
+}
+
+.social-media .call-us {
+text-align: left;
+display: block;
+width: auto;
+padding: 0 20px;
+}
+
+
+div.hideshow
+{
+visibility:visible;
+display:block;}
+
+div#page-menu {
+display: none;
+visibility: hidden;
+}
+
+
+.left-side-checkbox {
+margin-bottom: 0px;
+padding-bottom: 10px;
+}
+
+.black_logo {
+position: relative;
+top: 170px;
+right: 265px;
+}
+
+div#right_side {
+float: none;
+display: block;
+clear: both;
+}
+
+
+/* fallback placeholder */
+.placeholder {
+font-size:0.7em !important;
+}
+/* webkit placeholder */
+::-webkit-input-placeholder {
+font-size:0.7em !important;
+}
+/* moz placeholder */
+:-moz-placeholder {
+font-size:0.7em !important;
+}
+
+:-ms-input-placeholder {
+font-size:0.7em !important;
+}
+
+
+
+span.clic_find {
+clear: both;
+position: relative;
+left: 160px;
+top: -30px;
+margin-bottom:60px;
+}
+
+
+div#serch-locate input {
+width: 50%;
+clear: both;
+background-position:2% 50%;
+}
+
+div#dropdown {
+width: 48%;
+}
+
+div#dropdown input {
+width: 100%;
+}
+.custmr-btn a {
+position: relative;
+top: 70px;
+}
+
+.submit-btns .sum-btn {
+position: relative;
+top: -115px;
+width: 55%;
+cursor: pointer;
+float: left;
+}
+
+.bussin-btn {
+padding-bottom: 40px;
+position: relative;
+left: 20px;
+clear:both;
+margin: 0;
+display: block !important;
+}
+
+.ui-datepicker table {
+font-size: .8em;
+}
+
+div#ui-datepicker-div {
+width: 90%;
+}
+
+.submit-btns {
+display: block;
+width: 90%;
+margin: 0;
+}
+
+.min-contents {
+width: 90%;
+padding: 20px 0 0 0px;
+}
+
+.contents-colums-03 ,.contents-colums-06 {
+margin: 0;
+}
+
+.provid-banner h2 {
+float: none;
+display: block;
+width: auto;
+font-size: 1.5em;
+}
+
+div#search-all {
+float: left;
+margin: 40px 10px 0px;
+}
+
+.provid-banner p {
+width: auto;
+display: block;
+}
+
+.provid-banner {
+overflow: hidden;
+}
+.copy_right {
+text-align: left;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.form {
+float: left;
+display: block;
+}
+
+.footer-widget {
+float: none;
+display: block;
+}
+
+.footer-inner {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.footer {
+overflow: hidden;
+height: auto;
+}
+
+.footer-inner input, textarea {
+width: 90%;
+}
+
+#submit {
+width: 70%;
+}
+
+
+}
+
+/* ============================================== */
+/* iPhone4/Android portrait               320x480 */
+/* iPhone5 portrait                       320x568 */
+/* ============================================== */
+@media screen and (max-width:320px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+. . .
+}

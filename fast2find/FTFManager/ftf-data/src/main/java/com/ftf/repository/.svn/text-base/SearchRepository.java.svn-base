@@ -1,0 +1,11 @@
+package com.ftf.repository;
+
+import java.util.List;
+
+import com.ftf.model.BusinessDetails;
+
+public interface SearchRepository {
+	public List<BusinessDetails> getSearchDetails(String eventCatagories,
+			String city, String add, String zipCode);
+
+}

@@ -1,0 +1,305 @@
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+/* ============================================== */
+@media screen and (min-width:240px) and (max-width:319px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+html
+{
+overflow-x:hidden;
+}
+
+body {
+margin: 0 auto;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+overflow:hidden;
+}
+
+
+.top-header
+{
+overflow:visible;}
+div#top-header {
+min-height: 80px;
+}
+
+div#top-menu {
+float: none;
+display: block;
+margin-bottom: 10px;
+padding: 0 5px 0 5px;
+}
+
+div.sign_top {
+float: left;
+display: block;
+width:95%;
+}
+
+div.sign_top ul li a {
+padding: 0 5px 0 10px;
+}
+
+
+
+div.logo {
+float: none;
+display: block;
+}
+div#logo_wrap {
+max-width: 240px;
+}
+
+div.logo img
+{
+display:block;
+margin:0 auto 0;}
+
+
+.social-media .call-us {
+text-align: left;
+display: inline-block;
+padding: 0 10px;
+}
+
+div#social-media {
+float: none;
+display: block;
+padding: 0px 10px 30px 10px;
+}
+
+.social-media ul li {
+margin: 0 4px;
+}
+
+span.clic_find {
+top: 60em;
+right: 0px;
+background-size:90%;
+}
+
+
+div#right_side h3 {
+font-size: 1.5em;
+padding: 0;
+margin: 0 auto 0;
+display: block;
+position: relative;
+left: -10px;
+}
+
+
+div#find-location {
+width: 100%;
+padding: 30px 10px 20px 10px;
+}
+
+div#page-menu {
+display: none;
+visibility: hidden;
+}
+h2
+{
+1.8em
+width:auto;
+display:block;
+}
+
+.most-search-colums {
+display: block;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+.most-search-colums img {
+width: 97%;
+}
+
+
+div.hideshow
+{
+visibility:visible;
+display:block;}
+
+
+
+
+div#right_side {
+float: none;
+max-width: 240px;
+}
+
+div.black_logo {
+padding: 0;
+display: block;
+margin: 130px auto 0;
+}
+
+
+div#serch-locate input {
+width: 90%;
+}
+
+div#dropdown input {
+width: 95%;
+}
+div#dropdown {
+width: 90%;
+}
+
+div#ui-datepicker-div {
+width: 86%;
+}
+
+div#footer-widget {
+float: none;
+display: block;
+width: 20%;
+}
+
+span.copy_right {
+text-align: left;
+padding: 11px 10px;
+}
+
+div.footer-inner {
+padding: 0 10px 0 10px;
+}
+
+.contact-form textarea {
+width: 95%;
+}
+
+div#form {
+float: none;
+display: block;
+width: 20%;
+padding: 0 10px 0 0px;
+}
+
+div#form input {
+width: 95%;
+}
+
+div#footer {
+height: auto;
+overflow:visible;
+}
+
+.submit-btns .sum-btn {
+position: relative;
+top: -111px;
+left: -69px;
+width: 86%;
+cursor:pointer;
+}
+.custmr-btn a {
+text-indent: 20px;
+font-size: 1.1em;
+background-size: 87%;
+padding: 20px 0;
+}
+
+.ui-datepicker table
+{
+font-size:.8em;}
+
+div#mian-contents {
+width: 95%;
+padding: 20px 10px 0 10px;
+}
+
+.contents-colums ,div#contens-colums-02 ,.contents-colums-03 ,.contents-colums-04 ,.contents-colums-05 ,.contents-colums-06 {
+float: none;
+display: block;
+width: 95%;
+}
+
+.contents-colums-06 ,div#contens-colums-03
+{
+margin-left:0px;}
+
+
+.serch-locate input
+{
+background-position:2% 50%;}
+
+.bussin-btn a {
+background-size: 89%;
+font-size: 1.1em;
+text-indent: 30px;
+padding: 20px 0;
+}
+
+div.bussin-btn {
+position: relative;
+top: -30px !important;
+left: -70px;
+}
+
+div#custm-btn {
+position: relative;
+top: 60px;
+}
+
+
+.search-all h3 {
+margin: 7px auto 0;
+}
+
+div#search-all {
+float: left;
+width: 90%;
+background-size: 100%;
+margin: 30px 10px 0px;
+}
+
+div.provid-banner p {
+display: block;
+width: auto;
+}
+
+
+
+
+div.provid-banner h2 {
+display: block;
+width: auto;
+font-size: 1.4em;
+}
+
+div.provid-banner {
+width: 95%;
+background-repeat: repeat;
+overflow: hidden;
+}
+
+
+/* fallback placeholder */
+.placeholder {
+font-size:0.7em !important;
+}
+/* webkit placeholder */
+::-webkit-input-placeholder {
+font-size:0.7em !important;
+}
+/* moz placeholder */
+:-moz-placeholder {
+font-size:0.7em !important;
+}
+
+:-ms-input-placeholder {
+font-size:0.7em !important;
+}
+
+
+
+}
+
+
+
+
+

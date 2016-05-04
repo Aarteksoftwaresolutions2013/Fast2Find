@@ -1,0 +1,54 @@
+package com.ftf.serviceImpl;
+
+import java.util.List;
+
+import javax.mail.Message;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessagePreparator;
+import org.springframework.stereotype.Service;
+
+import com.ftf.repository.ForgotRepository;
+import com.ftf.service.ForgotService;
+import com.ftf.util.Encryption;
+@Service
+public class ForgotServiceImpl implements ForgotService{
+@Autowired
+private ForgotRepository forgotRepository;
+
+@Autowired
+private JavaMailSender mailSender;
+
+	@SuppressWarnings("rawtypes")
+	public List getPassword(String email) {
+		List password=null;
+		password=forgotRepository.getPassword(email);
+		return password;
+	}
+
+	public void sendMail(final String pass,final String emailId) {
+		final String password=Encryption.decrypt(pass);
+		System.out.println("password is--"+password);
+		MimeMessagePreparator messagePreparator = new MimeMessagePreparator() {  
+            public void prepare(MimeMessage mimeMessage) throws Exception {  
+               mimeMessage.setRecipient(Message.RecipientType.TO,new InternetAddress(emailId));  
+               mimeMessage.setFrom(new InternetAddress("earl@fast2find.com"));  
+               mimeMessage.setSubject("This is your Password");  
+               mimeMessage.setText("Your Password is-"+password);  
+            }  
+    };  
+    mailSender.send(messagePreparator); 
+		
+	}
+
+	/**
+	 * @param mailSender the mailSender to set
+	 */
+	public void setMailSender(JavaMailSender mailSender) {
+		this.mailSender = mailSender;
+	}
+
+}

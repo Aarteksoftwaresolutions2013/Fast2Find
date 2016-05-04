@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AARTEK-Branch/!svn/ver/1694/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository
+END
+VisitorRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/AARTEK-Branch/!svn/ver/1120/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/VisitorRepository.java
+END
+FeedbackInfoRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AARTEK-Branch/!svn/ver/1693/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/FeedbackInfoRepository.java
+END
+ForgotRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/AARTEK-Branch/!svn/ver/1251/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/ForgotRepository.java
+END
+PaypalInfoRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/AARTEK-Branch/!svn/ver/1686/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/PaypalInfoRepository.java
+END
+CountryRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/AARTEK-Branch/!svn/ver/1685/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/CountryRepository.java
+END
+SearchRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/AARTEK-Branch/!svn/ver/1672/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/SearchRepository.java
+END
+TallyAppRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/AARTEK-Branch/!svn/ver/1694/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/TallyAppRepository.java
+END
+BusinessInfoRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AARTEK-Branch/!svn/ver/1375/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/BusinessInfoRepository.java
+END
+LoginRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AARTEK-Branch/!svn/ver/1375/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/LoginRepository.java
+END
+CustomerInfoRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AARTEK-Branch/!svn/ver/1375/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/CustomerInfoRepository.java
+END
+BusinessUpdateRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/AARTEK-Branch/!svn/ver/1251/Fast2Find/FTFManager/ftf-data/src/main/java/com/ftf/repository/BusinessUpdateRepository.java
+END

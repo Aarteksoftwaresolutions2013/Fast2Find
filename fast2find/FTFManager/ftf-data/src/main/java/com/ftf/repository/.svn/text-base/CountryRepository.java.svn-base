@@ -1,0 +1,7 @@
+package com.ftf.repository;
+import java.util.List;
+
+import com.ftf.model.Country;
+public interface CountryRepository {
+	public List<Country> getAllCountryName();
+}

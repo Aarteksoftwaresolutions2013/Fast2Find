@@ -1,0 +1,10 @@
+connection.url=jdbc:mysql://localhost:3306/admin_fast2find_db?autoReconnect=true&characterEncoding=utf8
+#connection.url=jdbc:mysql://50.62.73.164:3306/admin_fast2find_db?autoReconnect=true&characterEncoding=utf8
+#connection.url=${db.connection.url}
+connection.username=root
+#connection.username=efinch
+connection.password=root
+#connection.password=Efinch~2013
+connection.driver_class=com.mysql.jdbc.Driver
+#hibernate.hbm2ddl.auto=update
+hibernate.show_sql=true

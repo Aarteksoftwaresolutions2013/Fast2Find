@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AARTEK-Branch/!svn/ver/1697/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service
+END
+VisitorService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AARTEK-Branch/!svn/ver/1120/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/VisitorService.java
+END
+FeedbackInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/AARTEK-Branch/!svn/ver/1697/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/FeedbackInfoService.java
+END
+ForgotService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AARTEK-Branch/!svn/ver/1123/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/ForgotService.java
+END
+PaypalInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/AARTEK-Branch/!svn/ver/1688/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/PaypalInfoService.java
+END
+CountryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AARTEK-Branch/!svn/ver/1688/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/CountryService.java
+END
+SearchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AARTEK-Branch/!svn/ver/1519/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/SearchService.java
+END
+TallyAppService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AARTEK-Branch/!svn/ver/1697/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/TallyAppService.java
+END
+BusinessInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/AARTEK-Branch/!svn/ver/1377/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/BusinessInfoService.java
+END
+LoginService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AARTEK-Branch/!svn/ver/1415/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/LoginService.java
+END
+BusinessUpdateInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/AARTEK-Branch/!svn/ver/1254/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/BusinessUpdateInfoService.java
+END
+CustomerInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/AARTEK-Branch/!svn/ver/1377/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/service/CustomerInfoService.java
+END

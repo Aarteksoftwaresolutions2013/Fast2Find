@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AARTEK-Branch/!svn/ver/1700/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller
+END
+BusinessController.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/AARTEK-Branch/!svn/ver/1690/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/BusinessController.java
+END
+VisitorUserController.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/AARTEK-Branch/!svn/ver/1676/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/VisitorUserController.java
+END
+ForgotPasswordController.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/AARTEK-Branch/!svn/ver/1676/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/ForgotPasswordController.java
+END
+FeedbackController.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/AARTEK-Branch/!svn/ver/1699/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/FeedbackController.java
+END
+SearchController.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AARTEK-Branch/!svn/ver/1676/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/SearchController.java
+END
+HelpController.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AARTEK-Branch/!svn/ver/1676/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/HelpController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/AARTEK-Branch/!svn/ver/1703/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/LoginController.java
+END
+RegistrationController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/AARTEK-Branch/!svn/ver/1676/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/controller/RegistrationController.java
+END

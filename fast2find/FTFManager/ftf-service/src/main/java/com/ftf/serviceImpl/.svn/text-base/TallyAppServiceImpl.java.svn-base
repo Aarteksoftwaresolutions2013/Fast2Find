@@ -1,0 +1,25 @@
+package com.ftf.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.repository.TallyAppRepository;
+import com.ftf.service.TallyAppService;
+
+@Service
+public class TallyAppServiceImpl implements TallyAppService{
+	@Autowired
+	private TallyAppRepository tallyAppRepository;
+	public boolean increaseCounter(int userId, int maleCount, int femaleCount) {
+		boolean status=false;
+		status=tallyAppRepository.increaseCounter(userId,maleCount,femaleCount);
+		if(status==true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	        function doAjaxPost() {
+	        // get the form values
+	        var name = $('#name').val();
+	        var email = $('#email1').val();
+	        var message = $('#message').val();
+
+	        $.ajax({
+	        type: "POST",
+	        url: "visitorMessage.do",
+	        data: "name=" + name + "&email=" + email + "&message=" + message,
+	        success: function(response){
+	        // we have the response
+	        $('#info').html(response); 
+	        $('#name').val('');
+	        $('#email1').val('');
+	        $('#message').val('');
+	        },
+	        error: function(e){
+	        alert('Error: ' + e);
+	        }
+	        });
+	        }
+</script>
+</head>
+<body>
+<div id="footer" class="footer">
+			<div class="footer-inner">
+			<div id="footer-widget" class="footer-widget">
+			<h3>about us</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div id="recent-catagory" class="recent-catagory">
+			<h3></h3>
+			</div>
+			<div id="form" class="form">
+			<h3>Quick Contact</h3>
+			<div id="contact-form" class="contact-form">
+				 <form:form modelAttribute="VisitorUser" autocomplete="off" >
+    				 	 <input type="hidden" name="action" value="submit" required/>
+    				 	  Name:<br />
+   						   <form:input path="name" id="name" size="30" maxlength="30" /> <br /> 
+   						  Email:<br /> 
+   						    <form:input path="emailId" id="email1" size="30" maxlength="50"/> <br /> 
+   						  Message:<br />
+    					     <form:textarea path="message" id="message" rows="7" cols="30" maxlength="150" /> <br />
+   				      <input type="button" value="Submit" id="submit" class="subm" onclick="doAjaxPost()" />
+    			<div id="info" style="color: green;"></div>
+    			</form:form>
+			</div><!-----end contact-form---->
+			</div><!-----end form div---->
+			</div><!-----end footer-inner---->
+			</div><!----end footer----->
+			<div class="bottom">
+			<span class="copy_right">© Domain.com 2014</span>
+			</div>
+</body>
+</html>

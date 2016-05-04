@@ -1,0 +1,287 @@
+/* ============================================== */
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+/* ============================================== */
+@media screen and (min-width: 480px) and (max-width:767px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+html
+{
+margin:0 auto;
+padding:0;
+}
+
+body
+{
+padding:0;
+display:block;
+margin:0 auto 0;
+overflow:hidden;}
+
+
+div.menu-wrap {
+overflow: hidden;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+div.sign_top {float: left;
+width: 31%;
+text-align: right;
+}
+
+.social-media {
+width: 76.3%;
+}
+
+.social-media .call-us {
+text-align: left;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+div.menu-wrp ul li {
+padding: 0px 7px 0 6px;
+}
+
+div.menu-wrp ul {
+padding: 0 0 0 8px;
+margin: 0 auto;
+}
+
+menu-wrp ul li a {
+font-size: 0.8em;
+}
+
+.find-location {
+padding: 0px 10px 20px 10px;
+width: 95%;
+}
+
+div#right_side {
+float: left;
+width: 100%;
+}
+
+.submit-btns .sum-btn {
+position: relative;
+top: -174px;
+width: 85%;
+left: 238px;
+}
+
+input#datepick {
+width: 85%;
+}
+
+.custmr-btn a {
+background-size: 90%;
+text-indent: 19px;
+font-size: 1.2em;
+padding-top: 19px;
+}
+
+.bussin-btn a {
+position: relative;
+top: -164px;
+margin: 10px 0 0;
+background-size: 90%;
+font-size: 1.2em;
+text-indent: 30px;
+padding-top: 20px;
+left: 230px;
+}
+
+.menu-wrp ul li a {
+font-size: 0.8em;
+}
+
+
+.clic_find {
+margin-top: 9cm;
+right: 0px;
+}
+
+.submit-btns {
+margin: 0 0 -130px;
+float:left;
+}
+
+
+div#mian-contents {
+width: 90%;
+padding: 20px 10px 0px 10px;
+}
+
+.contents-colums ,.contents-colums-02 ,div#contens-colums-03 ,.contents-colums-04 ,.contents-colums-05 ,.contents-colums-06 {
+float: none;
+width: 100%;
+margin: 0 0 0;
+}
+
+
+.provid-banner h2 {
+width: auto;
+display: block;
+}
+
+.logo {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+.provid-banner p {
+display: block;
+width: auto;
+}
+
+.provid-banner {
+overflow: hidden;
+width: 100%;
+}
+
+.search-all {
+float: left;
+margin-top: 2.2em;
+margin-left: 12px;
+}
+
+.most-search-colums {
+float: none;
+width: 100%;
+padding: 0;
+margin-right: 0px;
+}
+
+.most-search-colums img {
+width: 60%;
+}
+
+div.footer-inner {
+overflow: hidden;
+height: auto;
+width: 90%;
+padding: 30px 0px 0 0px;
+}
+.footer-widget {
+float: none;
+display: block;
+width:100%;
+}
+
+
+.form input, textarea {
+width: 94%;
+}
+
+#submit {
+width: 50%;
+}
+
+.copy_right {
+text-align: left;
+padding-left: 25px;
+padding-right: 10px;
+}
+
+
+.form {
+float: left;
+width: 100%;
+}
+
+.footer {
+height: auto;
+}
+
+.serch-locate input {
+width: 90%;
+}
+
+.serch-locate input:focus
+{
+padding-right:0%;
+width:100%;}
+
+
+/* fallback placeholder */
+.placeholder {
+font-size:0.8em !important;
+}
+/* webkit placeholder */
+::-webkit-input-placeholder {
+font-size:0.8em !important;
+}
+/* moz placeholder */
+:-moz-placeholder {
+font-size:0.8em !important;
+}
+
+:-ms-input-placeholder {
+font-size:0.8em !important;
+}
+
+div.menu-wrp {
+width: 100%;
+}
+
+
+/*--------------------about page responsive---------------
+/*--------------------about page responsive---------------
+/*--------------------about page responsive---------------*/
+
+
+div.getn-im img {
+width: 100%;
+}
+
+div.getin-des {
+width: 60%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+div.logl img {
+width: 55%;
+}
+
+.about-main p {
+padding-right: 10px;
+padding-left: 10px;
+}
+
+div.take-im img {
+width: 50%;
+}
+div.take-des {
+float: none;
+width: auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+div.take-im img {
+width: 50%;
+float: right;
+margin-right: 10px;
+}
+
+div.inner-busicontent img {
+width: 70%;
+display: block;
+margin: 0 auto;
+}
+
+div.column1 ul li {
+display: block;
+}
+
+div.inner-busicontent {
+padding-left: 0px;
+padding-right: 0px;
+}
+
+
+
+}

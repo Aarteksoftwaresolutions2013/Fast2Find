@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/common.js"></script>
+<title>Insert title here</title>
+<script type="text/javascript">
+function loggedInUser()
+{
+    document.Personal_info.action ="https://www.sandbox.paypal.com/cgi-bin/webscr";
+    document.Personal_info.submit();  
+}
+</script>
+<body>
+
+	        <!-----signup-page----->
+			<div class="top-sign-heading">
+			<h2>Signup Business or Event Page<br />
+			<span>Have account already? </span><a href="signIn.do">Sign in</a></h2>
+			</div>
+			<!-----end signup-page----->	
+			<div class="sign-contents">
+			<h4 align="left">${successMsg}</h4>
+			<h1>Personal Info<span class="h-right">Billing Address</span></h1>
+			<div id="custmr-form" class="custmr-frm">
+			<form:form method="POST" modelAttribute="CustomerInformation"  name="Personal_info"  id="Personal-info" autocomplete="off" >
+			
+	 <!-----Paypal Attribute start----->
+		<input name="cmd" type="hidden" value="_xclick-subscriptions" /> 
+		<input name="business" type="hidden" value="ahirwal_deepak-facilitator@outlook.com " /> 
+		<input name="item_name" type="hidden" value="yearly fee" />
+		<input name="a3" type="hidden" value="1" />
+		<input name="no_note" type="hidden" value="1" />
+		<input name="rm" type="hidden" value="1" /> <input name="currency_code" type="hidden" value="USD" />
+		<input name="t3" type="hidden" value="Y" /> 
+        <input name="p3" type="hidden" value="1" /> 
+        <input name="src" type="hidden" value="1" /> 
+        <input name="sra" type="hidden" value="1" />
+		<input name="return" type="hidden" value="http://123.236.193.148:8080/ftf-web/customerSignUp.do" />
+		<input name="cancel_return" type="hidden" value="http://123.236.193.148:8080/ftf-web/customerSignUp.do" />
+		<input name="notify_url" type="hidden" value="http://123.236.193.148:8080/ftf-web/testDemo.do" />
+			<!-- <input name="return" type="hidden" value="http://fast2find.com/ftf-web/customerSignUp.do" />
+		<input name="cancel_return" type="hidden" value="http://fast2find.com/ftf-web/customerSignUp.do" />
+		<input name="notify_url" type="hidden" value="http://fast2find.com/ftf-web/testDemo.do" /> -->
+		<input type="hidden" name="custom" value="your custom data here">
+	<!-----Paypal Attribute End-----> 
+			
+			<ul class="left-form">
+			<li>
+			<label for="FirstName"><span></span></label>
+			<form:input path="firstName" name="FirstName" placeholder="First Name"  id="FirstName" required ="autofocus" />
+			</li>
+			
+			<li>
+			<label for="LastName"><span></span></label>
+			<form:input path="lastName" name="LastName" placeholder="Last Name" id="LastName" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="Address"><span></span></label>
+			<form:input path="address" name="Address" placeholder="Address"  id="Address" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="City"><span></span></label>
+			<form:input path="city" name="City" placeholder="City" id="City" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="State/Province"><span></span></label>
+			<form:input path="state" name="State/Province" placeholder="State/Province"  id="state"  required="autofocus" />
+			</li>
+			
+		   <li>
+			<label for="Zip/ Post Code"><span></span></label>
+			<form:input path="zipCode" name="Zip/ Post Code" placeholder="Zip/ Post Code"  id="zip" required="autofocus" />
+			</li>
+			
+			
+			<li>
+			<label for="Country"><span></span></label>
+			<form:select path="country" id="selectint" >
+				<form:option value="0" label="Select Country"/>Select Country
+						<c:forEach items="${country}" var="refCountry">
+							<form:option value="${refCountry.countryId}" label="${refCountry.countryName}" />
+						</c:forEach>
+	  </form:select>
+			</li>
+			
+			<li>
+			<label for="Email Address"><span></span></label>
+			<form:input path="email" name="Email Address" placeholder="Email Address"  id="email" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="Email Address"><span></span></label>
+			<input type="email" name="Email Address" placeholder="Repeat Email Address"  id="repeatmail" required="autofocus" />
+			</li>
+			<!-- <li>
+			<input type="checkbox" name="Creataccount" id="account" class="acc" />
+			<label for="account" class="acct"><span></span>Create your account?</label>
+			</li> -->
+			
+			<li>
+			<input type="checkbox" name="Creataccount" id="account" class="acc" onclick="copyCustomerSignUpContent()" />
+			<label for="account" class="acct"><span></span>Billing Address Same as Personal Info</label>
+			</li>
+			
+			<li>
+			<label for="password"><span></span></label>
+			<form:password path="password" name="password" placeholder="Create Password"  id="password" required="autofocus" />
+			
+			</li>
+			
+			<li>
+			<label for="password"><span></span></label>
+			<input type="Password" name="confirmPassword" placeholder="Confirm Password"  id="confirmPassword" required="autofocus" />
+			</li>
+			
+			<li>
+			<input type="checkbox" name="agree" id="byclick" class="byclk" />
+			<label for="byclick" class="byclick"><span></span></label>
+			<p class="clcik">
+			By clicking submit, I agree and accept Terms and Conditions of the user agreement for Fast2find. Hereby confirming I have read, reviewed and understand the current Fast2find terms and conditions with in this document.
+			</p>
+			</li>
+			
+			<li class="terms"><p>Read Terms and Conditions</p></li>
+			
+			</ul>
+			<hr class="li-ne">
+			<ul class="right-frm">
+			<li>
+			<label for="FirstName"><span></span></label>
+			<form:input path="billingFirstName" name="FirstName" placeholder="First Name"  id="billingFirstName" required="autofocus"/>
+			</li>
+			
+			<li>
+			<label for="LastName"><span></span></label>
+			<form:input path="billingLastName" name="LastName" placeholder="Last Name" id="billingLastName" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="Address"><span></span></label>
+			<form:input path="billingAddress" name="Address" placeholder="Address"  id="billingAddress" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="City"><span></span></label>
+			<form:input path="billingCity" name="City" placeholder="City"  id="billingCity" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="State/Province"><span></span></label>
+			<form:input path="billingState" name="State/Province" placeholder="State/Province"  id="billingState" required="autofocus" />
+			</li>
+
+
+	    	<li>
+			<label for="Zip/ Post Code"><span></span></label>
+			<form:input path="billingZipCode" name="Zip/ Post Code" placeholder="Zip/ Post Code"  id="billingZip" required="autofocus" />
+			</li>
+			
+			<li>
+			<label for="Country"><span></span></label>
+			<form:select path="billingCountry" id="billing-selectint" >
+				<form:option value="0" label="Select Country"/>
+						<c:forEach items="${country}" var="refCountry">
+							<form:option value="${refCountry.countryId}" label="${refCountry.countryName}" />
+						</c:forEach>
+	        </form:select>	
+			</li>
+			
+			<li>
+			<label for="Email Address"><span></span></label>
+			<form:input path="billingEmail" name="Email Address" placeholder="Email Address"  id="billingEmail" required ="autofocus" />
+			</li>
+			
+			<li>
+			<label for="Email Address"><span></span></label>
+			<input type="email" name="Email Address" placeholder="Repeat Email Address"  id="billingRepeatEmail" required ="autofocus" />
+			</li>
+			
+				<li>
+		    <form:radiobutton path="userType" name="userType" id="prefer" value="Total=$0" onClick="total(this.form)" />
+			<label for="prefer" class="prefr"><span></span>Prefer no fees but still get limited access.</label>
+			</li>
+			
+			<li>
+			<form:radiobutton path="userType" name="userType" id="access" value="Total=$4.99" onClick="total(this.form)" />
+			<label for="access" class="prefr"><span></span>one time yearly fee $4.99 gives full access.</label>
+			</li>
+			<!-- <li>
+			<label for="total" id="totalblan"><span></span> Total $ 4.99</label>
+			</li> -->
+			
+			<li>
+			<label for="total"><span></span></label>
+			<input type="text" id="totalblan" value="Total=$"  />
+			</li>
+				<li id="credit"><a href="#">Credit Card</a></li>
+				<li id="paypal"><a href="#" onclick="loggedInUser()">Paypal</a></li>
+			    <li class="cya"><h3>Create Your Account?</h3></li>
+			<li>
+			<input type="submit" value="Submit Order" id="submi-t" onclick="return confirmPasswordValidation()"/>
+			</li>
+			</ul>
+			</form:form>
+			</div>
+			</div><!------end sign -contents----->
+			
+</body>
+</html>

@@ -1,0 +1,8 @@
+package com.ftf.repository;
+import java.util.List;
+
+import com.ftf.model.BusinessInformation;
+public interface BusinessInfoRepository {
+	@SuppressWarnings("rawtypes")
+	public List addBusinessInfo(BusinessInformation businessInformation);
+}

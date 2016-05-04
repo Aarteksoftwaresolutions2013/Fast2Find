@@ -1,0 +1,73 @@
+var markers = [
+                     <c:forEach items="${businessDetailsList}" var="business">
+                     {"title":'${business.businessName}',"lat":'${business.latitude}',"log":'${business.longitude}',"cap":'${(business.capacity.currentVolume * 100)/business.capacity.maxCapacity}',"description":'<b>Business Name:</b>${business.businessName}</br><b>Address:</b>${business.address}</br><b>City:</b>${business.cityName}</br><b>state:</b>${business.stateName}</br><b>Postal Code:</b>${business.zipCode}</br><b>Contact No:</b>${business.businessPhoneNumber}</br><b>Max Capacity:</b>${business.capacity.maxCapacity}</br><b>Currrent Volume:</b>${business.capacity.currentVolume}</br><b>No.Male:</b>${business.capacity.numberOfMale}</br><b>No.Female:</b>${business.capacity.numberOfFemale}'},
+                      </c:forEach>
+                       ];
+window.onload = function () {
+	if(markers.length==0)
+		{
+		    var mapOptions = {
+		        center: new google.maps.LatLng(51.50722,-0.12750),
+		        zoom: 8,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    };
+		}
+	else
+		{
+	for (i = 0; i <markers.length; i++){
+    var mapOptions = {
+        center: new google.maps.LatLng(markers[i].lat, markers[i].log),
+        zoom: 8,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+	}
+	}
+    var infoWindow = new google.maps.InfoWindow();
+    var latlngbounds = new google.maps.LatLngBounds();
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var i = 0;
+    var interval = setInterval(function () {
+ 
+        var data = markers[i]
+        var myLatlng = new google.maps.LatLng(data.lat, data.log);
+        var icon = "";
+        if (data.cap==100.0)
+        {
+        icon = "red";
+        }
+      else if (data.cap>=75.0 && data.cap<100.0)
+        {
+    	  icon = "blue";
+        }
+      else if (data.cap>=50.0 && data.cap<75.0)
+      {
+    	  icon = "yellow";
+      }
+      else if (data.cap>=0.0 && data.cap<=25.0)
+      {
+  	  icon = "green";
+      }
+    
+        icon = "http://maps.google.com/mapfiles/ms/icons/" + icon + ".png";
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            icon: new google.maps.MarkerImage(icon)
+        });
+        (function (marker, data) {
+            google.maps.event.addListener(marker, "click", function (e) {
+            	 infoWindow.setContent(data.description);
+                infoWindow.open(map, marker);
+            });
+        })(marker, data);
+        latlngbounds.extend(marker.position);
+        i++;
+        if (i == markers.length) {
+            clearInterval(interval);
+            var bounds = new google.maps.LatLngBounds();
+            map.setCenter(latlngbounds.getCenter());
+            map.fitBounds(latlngbounds);
+        }
+    }, 80);
+}

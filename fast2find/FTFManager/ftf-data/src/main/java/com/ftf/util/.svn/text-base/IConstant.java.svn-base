@@ -1,0 +1,119 @@
+package com.ftf.util;
+public class IConstant {
+	public static final int IS_DELETED_ACTIVE=1;
+	public static final int IS_DELETED_DEACTIVE=0;
+	public static final int USER_TYPE=1;
+	public static final int BUSINESS_TYPE=2;
+	public static final int removeTotal=6;
+	
+    public static final String SUCCESS_CODE = "200";
+    public static final String DATA = "DATA";
+    public static final String FAILURE_CODE = "400";
+    public static final String SUCCESS_MESSAGE = "MESSAGE";
+    public static final String ACCESS_DENIED = "Access Denied";
+    public static final String USER_UPDATED = "User Updated Successfully";
+    public static final String AUTHENTICATE_SUCCESS = "Authentication Successful";
+  
+    //Search Record 
+    public static final String SEARCH_SUCCESS = "Search Successful";
+    public static final String SEARCH_FAIL = "NO Record Found";
+    
+    
+    public final String FAIL_CODE="303";
+    public static final String AUTHENTICATION_KEY="authenticationKey";
+
+    
+    //Registration Constant
+    public static final String RESPONSE="response";
+    public static final String RESPONSE_CODE="responseCode";
+    public static final String REGISTRATION_SUCCESS="Registration Successful!!";
+    public static final String REGISTRATION_FAIL="User is not registered";
+    public static final String REGISTRATION_LOCALE_NOT_VALID="Unknown Source Found";
+    public static final String REGISTRATION_SOURCE_NOT_VALID="Access Denied";
+    public static final String REGISTRATION_EXEPTION_HANDLE="Exception Found At Server";
+    
+    
+    //forgot password email configuration
+   // public static final String FORGOT_SUCCESS_MESSAGE = "password sent to your e-mail account successfully";
+    public static final String FORGOT_SUCCESS_MESSAGE = "password sent to your e-mail account successfully";
+    public static final String FORGOT_FAIL_MESSAGE = "Your Email Id Not Registered";
+    
+    //Authenticate Rest User
+    public static final int UNAUTHORIZED_USER = 514;
+    public static final int FIRST_TIME_LOGIN = 201;
+    public static final int NORMAL_LOGIN = 202;
+    
+    public static final int DEVICE_DEACTIVE = 516;
+    public static final int NEW_DEVICE = 1001;
+    
+    /*FeedBack Rest User*/
+    public static final String FEEDBACK_SUCCESS_MESSAGE = "Your Feedback Save Successfully";
+    public static final String FEEDBACK_FAILURE_MESSAGE = "Your Feedback Not Save";
+    
+    /*Tally App Rest User*/
+    public static final String TALLYAPP_SUCCESS_MESSAGE = "Add SuccessFully";
+    public static final String TALLYAPP_FAILURE_MESSAGE = "Try Again";
+    
+    //Authenticate Mobile Logged IN User
+    public static final String LOGIN_FAIL = "User and Password Not Registered";
+    public static final String LOGIN_SUCCESS = "Login Success";
+    public static final String LOGIN_EXEPTION_HANDLE="Exception Found At Server";
+    
+    public static final String NEW_DEVICEID_MSG = "You have already register on another device if you login on this device you will no longer be able to use Care4Today on previous device";
+    
+    public static final String ACTIVE = "active";
+    public static final String STATUS_INACTIVE = "deactive";
+    
+    
+    public static final String ACCOUNT = "account";
+    public static final Byte MAX_LOGIN_ATTEMPT = 5;
+    public static final String EMAIL = "email";
+    public static final String DEVICEID = "deviceId";
+    public static final String ERROR = "error";
+    
+    public static final String WEB_SOURCE = "web";
+    
+    public static final String USER_SETTINGS_UPDATED = "User Settings Updated Successfully";
+    
+    public static final String USER_DELETED = "User Delete Successfully";
+    
+    public static final String SECURITY_QUESTION = "securityQuestion";
+    
+    public static final String SECURITY_ANSWER = "answer";
+    
+    public static final String SECURITY_ANSWER_NOT_MATCHED = "Answer is incorrect";
+    
+    public static final String PASSWORD_SENT = "Your password has been sent to your email address";
+    
+    public static final String MAIL_FORGOT_PASSWORD_SUBJECT = "Forgot password";
+    
+    //forgot password validation messages 
+    
+    public static final String BLANK_MAIL_ID = "Please enter your email-Id";
+    public static final String INVALID_MAIL_ID = "Please enter valid email-Id";
+    public static final String UNAUTORISED_MAIL_ID = "You are not Authorized user";
+    public static final String ACCOUNT_BLOCK = "Account blocked please call customer care";
+    public static final String ANSWER_NOT_MATCHED = "Answer is incorrect";
+    
+ // TimeZone Constants
+    
+    public static final String LONGITUDE="longitude";
+    public static final String LATITUDE="latitude";
+    public static final String TIMEZONE="timezone";
+    
+    
+    public static final Integer ALL_REMINDER_ON=1;
+    public static final Integer SELF_REMINDER=15;
+    public static final Integer FAMILY_REMINDER=17;
+    
+    public static final String ALERT_TYPE_ADMIN ="admin";
+    public static final String ALERT_TYPE ="alertType";
+    public static final String ALERT_TYPE_REFILE="refile";
+    public static final String ALERT_TYPE_SCHEDULE="schedule";
+    
+    public static final String REQUSET_FROM_MOBILE ="mobile";
+    public static final String REQUSET_FROM_WEB = "refile";
+    
+    public static final String TO_DATE="toDate";
+    public static final String FROM_DATE="fromDate";
+}

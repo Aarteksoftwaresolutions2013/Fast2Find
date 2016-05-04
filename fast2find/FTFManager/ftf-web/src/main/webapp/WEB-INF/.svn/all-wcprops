@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AARTEK-Branch/!svn/ver/1701/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF
+END
+tiles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/AARTEK-Branch/!svn/ver/1680/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/tiles.xml
+END
+dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AARTEK-Branch/!svn/ver/1661/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/dispatcher-servlet.xml
+END
+applicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/AARTEK-Branch/!svn/ver/1661/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/applicationContext-dao.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AARTEK-Branch/!svn/ver/1661/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/web.xml
+END

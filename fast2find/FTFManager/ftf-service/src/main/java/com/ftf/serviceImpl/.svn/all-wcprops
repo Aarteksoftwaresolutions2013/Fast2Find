@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/AARTEK-Branch/!svn/ver/1698/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl
+END
+CustomerInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AARTEK-Branch/!svn/ver/1378/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/CustomerInfoServiceImpl.java
+END
+VisitorServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AARTEK-Branch/!svn/ver/1120/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/VisitorServiceImpl.java
+END
+FeedbackInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AARTEK-Branch/!svn/ver/1698/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/FeedbackInfoServiceImpl.java
+END
+ForgotServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/AARTEK-Branch/!svn/ver/1520/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/ForgotServiceImpl.java
+END
+PaypalInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/AARTEK-Branch/!svn/ver/1689/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/PaypalInfoServiceImpl.java
+END
+CountryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AARTEK-Branch/!svn/ver/1689/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/CountryServiceImpl.java
+END
+SearchServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/AARTEK-Branch/!svn/ver/1674/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/SearchServiceImpl.java
+END
+TallyAppServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/AARTEK-Branch/!svn/ver/1698/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/TallyAppServiceImpl.java
+END
+BusinessInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/AARTEK-Branch/!svn/ver/1378/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/BusinessInfoServiceImpl.java
+END
+LoginServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/AARTEK-Branch/!svn/ver/1416/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/LoginServiceImpl.java
+END
+BusinessUpdateInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/AARTEK-Branch/!svn/ver/1540/Fast2Find/FTFManager/ftf-service/src/main/java/com/ftf/serviceImpl/BusinessUpdateInfoServiceImpl.java
+END

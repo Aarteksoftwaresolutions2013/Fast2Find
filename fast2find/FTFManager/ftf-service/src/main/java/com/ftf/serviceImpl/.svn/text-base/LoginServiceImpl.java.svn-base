@@ -1,0 +1,46 @@
+package com.ftf.serviceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.CustomerInformation;
+import com.ftf.repository.LoginRepository;
+import com.ftf.service.LoginService;
+import com.ftf.util.Encryption;
+
+/**
+ * @author PravinSir
+ *
+ */
+@Service
+public class LoginServiceImpl implements LoginService {
+	@Autowired
+	private LoginRepository loginRepository;
+
+	public CustomerInformation userSignIn(Object login) {
+		CustomerInformation loginMember = (CustomerInformation) login;
+		String password = Encryption.encrypt(loginMember.getPassword());
+		List<Object> memberList = null;
+		if (login != null) {
+			if (loginMember.getEmail() != null
+					&& loginMember.getPassword() != null) {
+				memberList = loginRepository.userSignIn(
+						loginMember.getEmail(), password);
+			}
+		}
+		if (memberList.size() == 0) {
+			loginMember = null;
+		} else {
+			loginMember = (CustomerInformation) memberList.get(0);
+		}
+		return loginMember;
+	}
+
+	public List<CustomerInformation> signInWebService(String email,
+			String password) {
+		return loginRepository.signInWebService(email,
+				Encryption.encrypt(password));
+	}
+}

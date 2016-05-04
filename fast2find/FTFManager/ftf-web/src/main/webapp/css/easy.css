@@ -1,0 +1,90 @@
+/* --- EASYDROPDOWN FLAT THEME by Jan Cantor --- */
+
+/* PREFIXED CSS */
+
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after,
+.dropdown .carat,
+.dropdown .carat:after,
+.dropdown .selected::after,
+.dropdown:after{
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.dropdown .selected::after,
+.dropdown.scrollable div::after{
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+}
+
+/* WRAPPER */
+
+.dropdown{
+	position: relative;
+	width: 250px;
+	cursor: pointer;
+	font-weight: 200;
+	background: #29AF84;
+	padding: 8px 0px 8px;
+	
+	border-radius: 5px;
+	
+	color:  #000;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.dropdown.open{
+	z-index: 2;
+}
+
+.dropdown:hover,
+.dropdown.focus{
+	background: #00C384;
+}
+
+/* CARAT */
+
+.dropdown .carat,
+.dropdown .carat:after{
+	position: absolute;
+	right: 14px;
+	top: 50%;
+	margin-top: -3px;
+	border: 6px solid transparent;
+	border-top: 6px solid #FFF;
+	z-index: 1;
+	
+	-webkit-transform-origin: 50% 20%;
+	-moz-transform-origin: 50% 20%;
+	-ms-transform-origin: 50% 20%;
+	transform-origin: 50% 20%;
+	
+}
+
+.dropdown:hover .carat:after{
+	border-top-color: #f4f4f4;
+}
+
+.dropdown.focus .carat{
+	border-top-color: #f8f8f8;
+}
+
+.dropdown.focus .carat:after{
+	border-top-color: #0180d1;
+}
+
+.dropdown.open .carat{
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

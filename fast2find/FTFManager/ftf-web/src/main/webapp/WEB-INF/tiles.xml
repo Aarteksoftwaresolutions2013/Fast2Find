@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseTemplate" id="baseTemplate"
+		template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="title" value="${title}" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<!-- Mapping for Index Page -->
+	<definition name="frontPage" id="frontPage" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/frontPage.jsp" />
+		<put-attribute name="title" type="string" value="Front Page" />
+	</definition>
+	<!-- Mapping for Registration Page -->
+	<definition name="registration" id="registration" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
+		<put-attribute name="title" type="string" value="Registration Page" />
+	</definition>
+
+	<!-- Mapping for SignIn Page -->
+	<definition name="signIn" id="signIn" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/signIn.jsp" />
+		<put-attribute name="title" type="string" value="SignIn Page" />
+	</definition>
+
+	<!-- Mapping for Customer Part -->
+	<definition name="customer" id="customer" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/customer.jsp" />
+		<put-attribute name="title" type="string" value="Customer Part" />
+	</definition>
+
+	<!-- Mapping for Business Part -->
+	<definition name="business" id="business" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/business.jsp" />
+		<put-attribute name="title" type="string" value="Business Part" />
+	</definition>
+
+	<!-- Mapping for Event PArt -->
+	<definition name="event" id="event" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/event.jsp" />
+		<put-attribute name="title" type="string" value="Event Part" />
+	</definition>
+
+	<!-- Mapping for SignIn Page -->
+	<definition name="admin" id="admin" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin.jsp" />
+		<put-attribute name="title" type="string" value="Admin Part" />
+	</definition>
+
+	<!-- Mapping for Business Register Page -->
+	<definition name="businessUpdate" id="businessUpdate"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/businessUpdate.jsp" />
+		<put-attribute name="title" type="string"
+			value="Business Register Page" />
+	</definition>
+
+	<!-- Mapping for Help Page -->
+	<definition name="help" id="help" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/help.jsp" />
+		<put-attribute name="title" type="string" value="Help Page" />
+	</definition>
+
+	<!--Term & Condition Page -->
+	<definition name="termAndCondition" id="termAndCondition"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/termAndCondition.jsp" />
+		<put-attribute name="title" type="string" value="TermAndCondition Page" />
+	</definition>
+
+	<!-- Mapping for FeedBack Page -->
+	<definition name="feedback" id="feedback" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/feedback.jsp" />
+		<put-attribute name="title" type="string" value="FeedBack Page" />
+	</definition>
+
+	<!-- Mapping for Event Update Page -->
+	<definition name="eventUpdate" id="eventUpdate" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/eventUpdate.jsp" />
+		<put-attribute name="title" type="string" value="Event Update Page" />
+	</definition>
+
+	<!-- Mapping for Forgot Password Page -->
+	<definition name="security" id="security" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/security.jsp" />
+		<put-attribute name="title" type="string" value="Forgot Password Page" />
+	</definition>
+
+	<!-- Mapping for Show Business Information Page -->
+	<definition name="showBusinessInfo" id="showBusinessInfo"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/showBusinessInfo.jsp" />
+		<put-attribute name="title" type="string"
+			value="Show Business Information Page" />
+	</definition>
+	<!-- Mapping for Show Quick Booking Page -->
+	<definition name="quickBooking" id="quickBooking" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/quickBooking.jsp" />
+		<put-attribute name="title" type="string" value="Quick Booking Page" />
+	</definition>
+	<!-- Mapping for Show Event Information Page -->
+	<definition name="eventSearchInfo" id="eventSearchInfo"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/eventSearchInfo.jsp" />
+		<put-attribute name="title" type="string"
+			value="Event Search Information Page" />
+	</definition>
+	<!-- Mapping for Show Event Information Page -->
+	<definition name="showEventInformation" id="showEventInformation"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/showEventInformation.jsp" />
+		<put-attribute name="title" type="string"
+			value="Show Information of Event" />
+	</definition>
+
+	<!-- Mapping for Report PAge -->
+	<definition name="reportPage" id="reportPage" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/generateReport.jsp" />
+		<put-attribute name="title" type="string" value="report  Page" />
+	</definition>
+
+	<!-- Mapping for Report PAge -->
+	<definition name="emailAlert" id="emailAlert" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/emailAlert.jsp" />
+		<put-attribute name="title" type="string" value="Email Alert Page" />
+	</definition>
+
+	<!-- Mapping for Event QuickBooking Page -->
+	<definition name="eventQuickBooking" id="eventQuickBooking"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/eventQuickBooking.jsp" />
+		<put-attribute name="title" type="string"
+			value="Event Quick Booking Page" />
+	</definition>
+
+	<!-- Customer Update Page Page -->
+	<definition name="registrationUpdatePage" id="registrationUpdatePage"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/registrationUpdatePage.jsp" />
+		<put-attribute name="title" type="string" value="Customer Update Page" />
+	</definition>
+
+	<!-- Customer Update Page Page -->
+	<definition name="eventReportPage" id="eventReportPage"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/generateEventReport.jsp" />
+		<put-attribute name="title" type="string" value="Event Report Page" />
+	</definition>
+
+	<!-- Customer Update Page -->
+	<definition name="quickBookingSuccess" id="quickBookingSuccess"
+		extends="baseTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/quickBookingSuccess.jsp" />
+		<put-attribute name="title" type="string"
+			value="QuickBooking Success Page" />
+	</definition>
+
+	<!-- show Business Customer business Name Page -->
+	<definition name="showBusiness" id="showBusiness" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/showBusiness.jsp" />
+		<put-attribute name="title" type="string" value="Show Business Name" />
+	</definition>
+
+	<!-- show Event Name Page -->
+	<definition name="showEvent" id="showEvent" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/showEvent.jsp" />
+		<put-attribute name="title" type="string" value="Show Event Name" />
+	</definition>
+
+	<!-- show FAQ Page -->
+	<definition name="faq" id="faq" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/faq.jsp" />
+		<put-attribute name="title" type="string" value="FAQ Page" />
+	</definition>
+
+	<!-- show ContactUs Page -->
+	<definition name="contactUs" id="contactUs" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/contactUs.jsp" />
+		<put-attribute name="title" type="string" value="ContactUS Page" />
+	</definition>
+
+	<!-- show About Page -->
+	<definition name="about" id="about" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/about.jsp" />
+		<put-attribute name="title" type="string" value="About Page" />
+	</definition>
+
+	<!-- show About Page -->
+	<definition name="news" id="news" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/news.jsp" />
+		<put-attribute name="title" type="string" value="News Page" />
+	</definition>
+	
+		<!-- show About Page -->
+	<definition name="support" id="support" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/support.jsp" />
+		<put-attribute name="title" type="string" value="Support Page" />
+	</definition>
+	
+		<!-- show About Page -->
+	<definition name="socialMedia" id="socialMedia" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/socialMedia.jsp" />
+		<put-attribute name="title" type="string" value="SocialMedia Page" />
+	</definition>
+	
+		<!-- show Business Edit page -->
+	<definition name="editBusiness" id="editBusiness" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/editBusiness.jsp" />
+		<put-attribute name="title" type="string" value="Edit Business Page" />
+	</definition>
+			<!-- show Business Edit page -->
+	<definition name="editEvent" id="editEvent" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/editEvent.jsp" />
+		<put-attribute name="title" type="string" value="Edit Event Page" />
+	</definition>
+	
+	<definition name="paypalButton" id="paypalButton" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/paypalButton.jsp" />
+		<put-attribute name="title" type="string" value="Subscription Page" />
+	</definition>
+		<definition name="privacyPolicy" id="privacyPolicy" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/privacyPolicy.jsp" />
+		<put-attribute name="title" type="string" value="Privacy Policy Page" />
+	</definition>
+	
+	<definition name="pricing" id="pricing" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/pricing.jsp" />
+		<put-attribute name="title" type="string" value="Pricing Page" />
+	</definition>
+		<definition name="editCustomerInfo" id="editCustomerInfo" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/editCustomerInfo.jsp" />
+		<put-attribute name="title" type="string" value="Edit Business And Event Customer Information Page" />
+	</definition>
+</tiles-definitions>

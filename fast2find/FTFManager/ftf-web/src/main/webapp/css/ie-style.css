@@ -1,0 +1,293 @@
+
+
+img
+{
+border:0px;}
+
+
+
+
+::-webkit-input-placeholder {
+   color: #d1d1d1; 
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #d1d1d1;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #d1d1d1;  
+}
+
+:-ms-input-placeholder {  
+   color: #d1d1d1 !important;  
+}
+
+.serch-locate INPUT
+{
+color:#d1d1d1;}
+
+
+input[placeholder], [placeholder], *[placeholder] {
+
+}
+
+.serch-locate input:focus {
+width: 535px;
+transition: .25s linear;
+-webkit-transition: .25s linear;
+-moz-transition: .25s linear;
+-ms-transition: .25s linear !important;
+}
+
+.serch-locate INPUT
+{
+height:40px !important;
+padding:0px 0px 0px 25px !important}
+
+
+
+
+.black_logo 
+{
+background-image:url("../images/gray.png")no-repeat;}
+
+.hasPlaceholder
+{
+color:#d1d1d1 !important;
+}
+
+
+
+ul.right-checkbox-sct label {
+background-position: -3% -5%;
+padding: 7px 0px 4px 35px;
+display: block;
+}
+
+
+
+ul.right-checkbox-sct label.checked, .ul.right-checkbox-sct label.checked {
+background-position: -3% 88%;
+color: #356AA0;
+}
+
+
+
+li.check-all-tag {
+position: relative;
+top: -30px !important;
+clear: both;
+}
+
+input#all {
+box-shadow: none;
+outline: none;
+border: 0px;
+position: relative;
+top: 20px !important;
+margin-bottom:0px;
+
+}
+
+
+.custombb-checkbox input, .custombb-radio input {
+position: absolute;
+left: 2px;
+top: 4px !important;
+margin: 0;
+z-index: 0;
+}
+
+.custombb-checkbox input, .custombb-radio input
+{
+border:0px !important;
+outline:none !important;
+}
+.black_logo img
+{
+opacity:0.7 !important;
+filter:alpha(opacity=50) !important; /* For IE8 and earlier */
+}
+
+
+.submit-btns .sum-btn
+{
+background:#356AA0;
+border:0px;
+padding:15px 0 15px !important;
+width:238px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:13pt;
+font-weight:500;
+border:5px;
+-webkit-border-radius:5px;
+-ms-border-radius:5px;
+-moz-border-radius:5px;
+-o-border-radius:5px;
+behavior:url(" ie-css3.htc");
+margin:-4px 0 0 !important;
+color:#fff;}
+
+.quickbk-checkbox input, .quickbk-radio input
+{
+border:0px !important;
+outline:none;}
+
+input#total-including:focus
+{
+box-shadow:none !important;
+border:0px !important;
+border:0px;
+width:440px !important;
+text-align:center !important;
+font-weight:bold;
+text-indent:0 !important;
+
+
+}
+
+
+.bst , .tfc , .tfcomdy , .tfrest{
+font-size: 13pt;
+color: #D1D1D1;
+cursor: pointer;
+display: inline-block;
+margin-bottom: 10px;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+top: 5px !important;
+}
+
+
+select#sign-gbal, #sign-gbal-right {
+width: 215px;
+padding: 8px 0 8px 10px;
+font-size: 12pt;
+}
+
+DIV.customsign-radio INPUT:focus
+{
+border:0px !important;}
+
+
+
+/* input, label positioning */
+.customsign-checkbox input, 
+.customsign-radio input {
+	position: absolute;
+	left: 2px;
+	top: -5px !important;
+	margin: 0;
+	z-index: 0;
+	border:0px !important;
+}
+
+
+
+.customsgbuh-checkbox, .customsgbuh-radio { position: relative; }
+	
+/* input, label positioning */
+.customsgbuh-checkbox input, 
+.customsgbuh-radio input {
+	position: absolute;
+	left: 2px;
+	top: -5px !important;
+	margin: 0;
+	z-index: 0;
+	border:0px !important;
+}
+
+
+
+.customsignup-checkbox input, 
+.customsignup-radio input {
+	position: absolute;
+	left: 2px;
+	top: -6px !important;
+	margin: 0;
+	z-index: 0;
+	border:0px !important;
+}
+
+
+
+
+#buz-name ,#prm-cod ,#ownfrs-nam ,#ownlast-nam ,#City ,#st-province ,#zip-cod
+{
+width:207px !important;
+margin-right:10px;
+display:inline-block;
+color:#333;
+margin-bottom:10px;
+border:1px solid #ccc;
+padding:12px 0px 12px 10px;}
+
+
+
+
+/* input, label positioning */
+.customkha-checkbox input, 
+.customkha-radio input {
+	position: absolute;
+	left: -2px;
+	top: -8px !important;
+	margin: 0;
+	z-index: 0;
+	border:0px !important;
+}
+
+/* input, label positioning */
+.customcc-checkbox input, 
+.customcc-radio input {
+	position: absolute;
+	left: -3px !important;
+	top: -4px !important;
+	margin: 0;
+	z-index: 0;
+	border: 0px !important;
+}
+
+
+.customcc-checkbox input:focus, .customcc-radio input :focus
+{
+border:0 !important;
+box-shadow:none !important;
+
+}
+
+
+.clic_find
+{
+display: block;
+width: 139px;
+height: 80px;
+padding: 10px 5px;
+background: url("../images/index_17.png") no-repeat;
+position: absolute;
+right: 10%;
+top: 44% !important;}
+
+.signupglobal-checkbox input:focus, .signupglobal-radio inupt:focus
+{
+padding-rigth:0% !important;
+border:0px !important;
+box-shadow:!important;
+}
+
+.signupglobal-checkbox input, .signupglobal-radio input
+
+{
+border:0 !important;
+box-shadow:none !important;}
+
+.signupglobal-checkbox input, 
+.signupglobal-radio input {
+	position: absolute;
+	left: 3px !important;
+	top: -3px !important;
+	margin: 0;
+	z-index: 0;
+}
+
+

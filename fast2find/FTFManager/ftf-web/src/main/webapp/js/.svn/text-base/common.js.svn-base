@@ -1,0 +1,192 @@
+function copyContent() {
+	var status = document.signup_business_form.same_as_bz.checked;
+	if (status) {
+		document.getElementById("billing-buzz-name").value = document
+				.getElementById("buz-name").value;
+		document.getElementById("billing-ownfrs-nam").value = document
+				.getElementById("ownfrs-nam").value;
+		document.getElementById("billing-ownlast-nam").value = document
+				.getElementById("ownlast-nam").value;
+		document.getElementById("billing-buz-add").value = document
+				.getElementById("buz-add").value;
+		document.getElementById("billing-City").value = document
+				.getElementById("City").value;
+		document.getElementById("billing-st-province").value = document
+				.getElementById("st-province").value;
+		document.getElementById("billing-zip-cod").value = document
+				.getElementById("zip-cod").value;
+		document.getElementById("billing-selectint").value = document
+				.getElementById("selectint").value;
+		document.getElementById("billing-email-ad").value = document
+				.getElementById("email-ad").value;
+		document.getElementById("billing-repeat-email-ad").value = document
+				.getElementById("repeat-email-ad").value;
+	} else {
+		document.getElementById("billing-buzz-name").value = "";
+		document.getElementById("billing-ownfrs-nam").value = "";
+		document.getElementById("billing-ownlast-nam").value = "";
+		document.getElementById("billing-buz-add").value = "";
+		document.getElementById("billing-City").value = "";
+		document.getElementById("billing-st-province").value = "";
+		document.getElementById("billing-zip-cod").value = "";
+		document.getElementById("billing-selectint").value = "";
+		document.getElementById("billing-email-ad").value = "";
+		document.getElementById("billing-repeat-email-ad").value = "";
+	}
+}
+function copyAddress() {
+	var status = document.registration.chkPermAddress.checked;
+	if (status) {
+		document.getElementById("billingAddress").value = document
+				.getElementById("address").value;
+	} else {
+		document.getElementById("billingAddress").value = "";
+	}
+}
+function confirmPasswordValidation() {
+	var password = document.getElementById("password").value;
+	var confirmPassword = document.getElementById("confirmPassword").value;
+	var status = document.Personal_info.agree.checked;
+	var email = document.getElementById("email").value;
+	var repeatmail = document.getElementById("repeatmail").value;
+	var billingEmail = document.getElementById("billingEmail").value;
+	var billingRepeatEmail = document.getElementById("billingRepeatEmail").value;
+	if (password != confirmPassword) {
+		alert("Password and Confirm Password Should be Same");
+		return false;
+	}
+	if (!status) {
+		alert("Please clicking,I agree and accept Terms and Conditions");
+		return false;
+	}
+	if (email != repeatmail) {
+		alert("Email and Repeat Email Should be Same");
+		return false;
+	}
+	if (billingEmail != billingRepeatEmail) {
+		alert("BillingEmail and Billing ReapeatEmail Should be Same");
+		return false;
+	} else {
+		return true;
+	}
+
+}
+function termCondition() {
+	var status = document.signup_business_form.bycli.checked;
+	var email = document.getElementById("email-ad").value;
+	var repeatEmail = document.getElementById("repeat-email-ad").value;
+	var billingEmail = document.getElementById("billing-email-ad").value;
+	var billingRepeatEmail = document.getElementById("billing-repeat-email-ad").value;
+	var eventEmail = document.getElementById("event-email-ad").value;
+	var eventRepeatEmail = document.getElementById("event-repeat-email-ad").value;
+	var password = document.getElementById("password").value;
+	var confirmPassword = document.getElementById("confirmPassword").value;
+	if (!status) {
+		alert("Please clicking,I agree and accept Terms and Conditions");
+		return false;
+	}
+	if (email != repeatEmail) {
+		alert("Email and Repeat Email Should be Same");
+		return false;
+	}
+	if (billingEmail != billingRepeatEmail) {
+		alert("BillingEmail and Repeat BillingEmail Should be Same");
+		return false;
+	}
+	if (eventEmail != eventRepeatEmail) {
+		alert("EventEmail and Repeat EventEmail Should be Same");
+		return false;
+	}
+	if (password != confirmPassword) {
+		alert("Password and Confirm Password Should be Same");
+		return false;
+	} else {
+		return true;
+	}
+
+}
+function totalForBusiness(form) {
+	var signFee = document.signup_business_form.sign_fee.checked;
+	var monthFee = document.signup_business_form.month_fee.checked;
+	var yearlyFee = document.signup_business_form.year_fee.checked;
+	if (signFee == true) {
+		document.getElementById("hddn").value = document
+				.getElementById("sign_fee").value;
+	} else if (monthFee == true) {
+		document.getElementById("hddn").value = document
+				.getElementById("month_fee").value;
+	} else if (yearlyFee == true) {
+		document.getElementById("hddn").value = document
+				.getElementById("year_fee").value;
+	} else if (signFee == false && monthFee == false && yearlyFee == false) {
+		document.getElementById("hddn").value = "";
+	}
+}
+function total(form) {
+	var free = document.Personal_info.prefer.checked;
+	var oneTime = document.Personal_info.access.checked;
+	/*var monthFee = document.Personal_info.Ongoing.checked;
+	var yearlyFee = document.Personal_info.Y_early.checked;*/
+	if (free == true) {
+		document.getElementById("totalblan").value = document
+				.getElementById("prefer").value;
+	} else if (oneTime == true) {
+		document.getElementById("totalblan").value = document
+				.getElementById("access").value;
+	} else if (monthFee == true) {
+		document.getElementById("totalblan").value = document
+				.getElementById("Ongoing").value;
+	} else if (yearlyFee == true) {
+		document.getElementById("totalblan").value = document
+				.getElementById("Y_early").value;
+	} else if (free == false && oneTime == false && monthFee == false
+			&& yearlyFee == false) {
+		document.getElementById("totalblan").value = "";
+	}
+
+}
+function copyCustomerSignUpContent() {
+	var status = document.Personal_info.Creataccount.checked;
+	if (status) {
+		document.getElementById("billingFirstName").value = document
+				.getElementById("FirstName").value;
+		document.getElementById("billingLastName").value = document
+				.getElementById("LastName").value;
+		document.getElementById("billingAddress").value = document
+				.getElementById("Address").value;
+		document.getElementById("billingCity").value = document
+				.getElementById("City").value;
+		document.getElementById("billingState").value = document
+				.getElementById("state").value;
+		document.getElementById("billingZip").value = document
+				.getElementById("zip").value;
+		document.getElementById("billing-selectint").value = document
+				.getElementById("selectint").value;
+		document.getElementById("billingEmail").value = document
+				.getElementById("email").value;
+		document.getElementById("billingRepeatEmail").value = document
+				.getElementById("repeatmail").value;
+	} else {
+		document.getElementById("billingFirstName").value = "";
+		document.getElementById("billingLastName").value = "";
+		document.getElementById("billingAddress").value = "";
+		document.getElementById("billingCity").value = "";
+		document.getElementById("billingState").value = "";
+		document.getElementById("billingZip").value = "";
+		document.getElementById("billing-selectint").value = "";
+		document.getElementById("billingEmail").value = "";
+		document.getElementById("billingRepeatEmail").value = "";
+	}
+}
+function numeric(e) {
+	e.value = e.value.replace(/[^0-9]+/g, '-');
+}
+function Validate(txt) {
+	txt.value = txt.value.replace(/[^a-zA-Z 0-9\n\r]+/g, '');
+}
+function onlyAlph(alph) {
+	alph.value = alph.value.replace(/[^a-zA-Z]+/g, ' ');
+}
+function hourrVal(hr) {
+	hr.value = hr.value.replace(/[^0-9]+/g, '');
+}

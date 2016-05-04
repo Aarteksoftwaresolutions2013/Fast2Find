@@ -1,0 +1,58 @@
+package com.ftf.validator;
+
+import org.springframework.stereotype.Component;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.ftf.model.UserRegistration;
+
+@Component
+public class CustomerSignUpValidation implements Validator{
+
+	public boolean supports(Class<?> clazz) {
+		return UserRegistration.class.isAssignableFrom(clazz);
+	}
+
+	public void validate(Object target, Errors errors) {
+		UserRegistration userRegistration=(UserRegistration)target;
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "firstName",
+		"error.firstName.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastName",
+		"error.lastName.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "location.address",
+		"error.address.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "location.cityName",
+		"error.city.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "location.stateName",
+		"error.state.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "location.zipCode",
+		"error.zipCode.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "emailId",
+		"error.email.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password",
+		"error.password.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.firstName",
+		"error.billingFirstName.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.LastName",
+		"error.billingLastName.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.location.address",
+		"error.billingAddress.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.location.cityName",
+		"error.billingCityName.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.location.stateName",
+		"error.billingStateName.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.location.zipCode",
+		"error.billingZipCode.empty");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "billingAddress.emailId",
+		"error.billingEmailId.empty");
+		if(userRegistration.getLocation().getCountry().getCountryId()==0)
+		{
+			errors.rejectValue("location.country.countryId","error.country.select");
+		}
+		if(userRegistration.getBillingAddress().getLocation().getCountry().getCountryId()==0)
+		{
+			errors.rejectValue("billingAddress.location.country.countryId","error.billingCountry.select");
+		}
+	}
+}

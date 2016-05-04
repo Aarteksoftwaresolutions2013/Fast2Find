@@ -1,0 +1,29 @@
+package com.ftf.serviceImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.BusinessDetails;
+import com.ftf.repository.SearchRepository;
+import com.ftf.service.SearchService;
+
+@Service
+public class SearchServiceImpl implements SearchService {
+	@Autowired
+	private SearchRepository searchRepository;
+
+	public List<BusinessDetails> getSearchDetails(String eventCatagories,
+			String fullAddress) {
+		List<BusinessDetails> list = new ArrayList<BusinessDetails>();
+		String[] splitAddress = fullAddress.split(",");
+		String city = splitAddress[0];
+		String add = splitAddress[1];
+		String zipCode = splitAddress[2];
+		list = searchRepository.getSearchDetails(eventCatagories, city, add,
+				zipCode);
+		return list;
+	}
+}

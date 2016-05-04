@@ -1,0 +1,6 @@
+package com.ftf.service;
+
+import com.ftf.model.BusinessDetails;
+public interface BusinessUpdateInfoService {
+	public void businessEventInfoAdd(BusinessDetails businessDetails);
+}

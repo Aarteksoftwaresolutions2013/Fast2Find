@@ -1,0 +1,20 @@
+package com.ftf.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.VisitorUser;
+import com.ftf.repository.VisitorRepository;
+import com.ftf.service.VisitorService;
+import com.ftf.util.IConstant;
+
+@Service
+public class VisitorServiceImpl implements VisitorService{
+@Autowired
+private VisitorRepository visitorRepository;
+
+public void addVisitorMessage(VisitorUser visitorUser) {
+	visitorUser.setIsDeleted(IConstant.IS_DELETED_ACTIVE);
+	visitorRepository.addVisitorMessage(visitorUser);
+}
+}

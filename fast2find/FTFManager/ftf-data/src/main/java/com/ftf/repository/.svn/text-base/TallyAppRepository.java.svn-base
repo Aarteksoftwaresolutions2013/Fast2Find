@@ -1,0 +1,5 @@
+package com.ftf.repository;
+public interface TallyAppRepository {
+	public boolean increaseCounter(int userId, int maleCount, int femaleCount);
+
+}

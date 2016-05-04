@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<mapping class="com.ftf.model.CustomerInformation" />
+		<mapping class="com.ftf.model.Location" />
+		<mapping class="com.ftf.model.FeedbackDetails" />
+		<mapping class="com.ftf.model.BillingAddress" />
+		<mapping class="com.ftf.model.BusinessDetails" />
+		<mapping class="com.ftf.model.BusinessInformation" />
+		<mapping class="com.ftf.model.CardDetails" />
+		<mapping class="com.ftf.model.City" />
+		<mapping class="com.ftf.model.Country" />
+		<mapping class="com.ftf.model.EventCatagories" />
+		<mapping class="com.ftf.model.EventInformation" />
+		<mapping class="com.ftf.model.EventRegistration" />
+		<mapping class="com.ftf.model.MusicType" />
+		<mapping class="com.ftf.model.OrderInformation" />
+		<mapping class="com.ftf.model.QuickBooking" />
+		<mapping class="com.ftf.model.SpecialLocation" />
+		<mapping class="com.ftf.model.State" />
+		<mapping class="com.ftf.model.Trends" />
+		<mapping class="com.ftf.model.UserRegistration" />
+		<mapping class="com.ftf.model.VisitorUser" />
+		<mapping class="com.ftf.model.Capacity" />
+	</session-factory>
+</hibernate-configuration>

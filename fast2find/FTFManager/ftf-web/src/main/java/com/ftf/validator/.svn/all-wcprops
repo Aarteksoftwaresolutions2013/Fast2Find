@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AARTEK-Branch/!svn/ver/1523/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/validator
+END
+CustomerSignUpValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/AARTEK-Branch/!svn/ver/1257/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/validator/CustomerSignUpValidation.java
+END
+BusinessSignUpValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/AARTEK-Branch/!svn/ver/1426/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/validator/BusinessSignUpValidator.java
+END
+ValidationUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AARTEK-Branch/!svn/ver/1380/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/validator/ValidationUtil.java
+END
+SecurityValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/AARTEK-Branch/!svn/ver/1523/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/validator/SecurityValidator.java
+END
+SignInValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AARTEK-Branch/!svn/ver/1426/Fast2Find/FTFManager/ftf-web/src/main/java/com/ftf/validator/SignInValidator.java
+END

@@ -1,0 +1,8 @@
+package com.ftf.repository;
+import java.util.List;
+
+import com.ftf.model.CustomerInformation;
+public interface LoginRepository {
+	public List<Object> userSignIn(String emailId, String password);
+	public List<CustomerInformation> signInWebService(String email, String password);
+}

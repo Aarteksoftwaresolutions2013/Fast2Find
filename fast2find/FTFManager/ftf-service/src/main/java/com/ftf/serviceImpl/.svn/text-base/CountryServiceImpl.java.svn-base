@@ -1,0 +1,18 @@
+package com.ftf.serviceImpl;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.ftf.model.Country;
+import com.ftf.repository.CountryRepository;
+import com.ftf.service.CountryService;
+@Service
+public class CountryServiceImpl implements CountryService{
+@Autowired
+private CountryRepository countryRepository;
+public List<Country> getAllCountryName() {
+		List<Country> countryList=new ArrayList<Country>();
+		countryList=countryRepository.getAllCountryName();
+		return countryList;
+}
+}

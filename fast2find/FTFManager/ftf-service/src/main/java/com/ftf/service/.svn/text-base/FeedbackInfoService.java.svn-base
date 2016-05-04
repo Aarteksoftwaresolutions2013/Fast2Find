@@ -1,0 +1,8 @@
+package com.ftf.service;
+
+import com.ftf.model.FeedbackDetails;
+
+public interface FeedbackInfoService {
+	public boolean feedbackInfoAdd(FeedbackDetails feedbackDetails);
+
+}

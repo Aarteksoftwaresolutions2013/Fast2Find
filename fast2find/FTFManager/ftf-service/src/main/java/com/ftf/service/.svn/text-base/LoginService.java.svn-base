@@ -1,0 +1,14 @@
+package com.ftf.service;
+
+import java.util.List;
+
+import com.ftf.model.CustomerInformation;
+
+public interface LoginService {
+public CustomerInformation userSignIn(Object object);
+public List<CustomerInformation> signInWebService(String email, String password);
+}
+
+
+
+

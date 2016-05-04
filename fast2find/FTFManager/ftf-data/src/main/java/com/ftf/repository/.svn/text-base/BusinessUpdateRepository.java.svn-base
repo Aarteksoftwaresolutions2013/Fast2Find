@@ -1,0 +1,9 @@
+package com.ftf.repository;
+
+import com.ftf.model.BusinessDetails;
+
+
+public interface BusinessUpdateRepository {
+	public void businessEventInfoAdd(BusinessDetails businessDetails);
+
+}

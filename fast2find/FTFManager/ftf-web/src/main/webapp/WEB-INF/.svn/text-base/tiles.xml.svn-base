@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name="baseTemplate" id="baseTemplate" template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="title" value="${title}" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" /> -->
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+</definition>
+
+<!-- Mapping for Registration Page-->
+<definition name="frontPage" id="frontPage" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/frontPage.jsp"/>
+		<put-attribute name="title" type="string" value="Front Page" />
+</definition>
+
+<!-- Mapping for Registration Page-->
+<definition name="registration" id="registration" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/registration.jsp"/>
+		<put-attribute name="title" type="string" value="Registration Page" />
+</definition>
+
+<!-- Mapping for Login Page-->
+<definition name="login" id="login" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp"/>
+		<put-attribute name="title" type="string" value="Login Page" />
+</definition>
+
+<!-- Mapping for Home Page-->
+<definition name="home" id="home" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp"/>
+		<put-attribute name="title" type="string" value="Home Page" />
+</definition>
+<!-- Mapping for Customer Sign Up Page-->
+<definition name="customerSignUp" id="customerSignUp" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/customerSignUp.jsp"/>
+		<put-attribute name="title" type="string" value="Customer Sign Up Page" />
+</definition>
+
+<!-- Mapping for Business Sign Up Page-->
+<definition name="businessSignUp" id="businessSignUp" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/businessSignUp.jsp"/>
+		<put-attribute name="title" type="string" value="Business Sign Up Page" />
+</definition>
+
+<!-- Mapping for SignIn Page-->
+<definition name="signIn" id="signIn" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/signIn.jsp"/>
+		<put-attribute name="title" type="string" value="SignIn Page" />
+</definition>
+
+<!-- Mapping for SignIn Page-->
+<definition name="security" id="security" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/security.jsp"/>
+		<put-attribute name="title" type="string" value="Security Page" />
+</definition>
+<!-- testNotify and success pages use for test notify message from paypal-->
+<definition name="testNotify" id="testNotify" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/testNotify.jsp"/>
+		<put-attribute name="title" type="string" value="testNotify Page" />
+</definition>
+<definition name="success" id="success" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/success.jsp"/>
+		<put-attribute name="title" type="string" value="success Page" />
+</definition>
+
+<!-- Mapping for Customer Buisness Update Page-->
+<definition name="businessUpdate" id="businessUpdate" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/businessUpdate.jsp"/>
+		<put-attribute name="title" type="string" value="businessUpdate Page" />
+</definition>
+
+<!-- Mapping for FeedBack Page-->
+<definition name="feedback" id="feedback" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/feedback.jsp"/>
+		<put-attribute name="title" type="string" value="FeedBack Page" />
+</definition>
+
+<!-- Mapping for Help Page-->
+<definition name="help" id="help" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/help.jsp"/>
+		<put-attribute name="title" type="string" value="Help Page" />
+</definition>
+
+
+<definition name="file" id="file" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/file.jsp"/>
+		<put-attribute name="title" type="string" value="Help Page" />
+</definition>
+
+</tiles-definitions>

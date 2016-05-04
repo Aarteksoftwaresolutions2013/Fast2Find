@@ -1,0 +1,9 @@
+package com.ftf.repository;
+
+import com.ftf.model.CardDetails;
+
+public interface PaypalInfoRepository {
+
+	public void addPaypalInfo(CardDetails cardDetails);
+
+}

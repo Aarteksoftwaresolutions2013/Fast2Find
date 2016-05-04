@@ -1,0 +1,26 @@
+package com.ftf.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.FeedbackDetails;
+
+import com.ftf.repository.FeedbackInfoRepository;
+import com.ftf.service.FeedbackInfoService;
+import com.ftf.util.IConstant;
+
+@Service
+public class FeedbackInfoServiceImpl implements FeedbackInfoService {
+	@Autowired
+	private FeedbackInfoRepository feedbackInfoRepository;
+
+	public boolean feedbackInfoAdd(FeedbackDetails feedbackDetails) {
+		boolean status=false;
+		if (feedbackDetails != null) {
+			feedbackDetails.setIsDeleted(IConstant.IS_DELETED_ACTIVE);
+			status=feedbackInfoRepository.feebackInfoAdd(feedbackDetails);
+			return status;
+		}
+		return status;
+	}
+}

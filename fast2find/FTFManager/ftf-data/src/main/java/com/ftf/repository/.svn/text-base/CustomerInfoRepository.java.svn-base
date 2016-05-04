@@ -1,0 +1,8 @@
+package com.ftf.repository;
+import java.util.List;
+
+import com.ftf.model.CustomerInformation;
+public interface CustomerInfoRepository {
+	@SuppressWarnings("rawtypes")
+	public List custInfoAdd(CustomerInformation userRegistration);
+}

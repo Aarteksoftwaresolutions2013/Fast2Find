@@ -1,0 +1,9 @@
+package com.ftf.service;
+
+import java.util.List;
+import com.ftf.model.BusinessDetails;
+
+public interface SearchService {
+	public List<BusinessDetails> getSearchDetails(String eventCatagories,
+			String fullAddress);
+}

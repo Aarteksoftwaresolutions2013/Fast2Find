@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<mapping class="com.ftf.model.Audit" />
+		<mapping class="com.ftf.model.Location" />
+		<mapping class="com.ftf.model.Branch" />
+		<mapping class="com.ftf.model.BusinessAndEventInformation" />
+		<mapping class="com.ftf.model.CustomerInformation" />
+		<mapping class="com.ftf.model.FeedbackDetails" />
+		<mapping class="com.ftf.model.Login" />
+		<mapping class="com.ftf.model.QuickBooking" />
+		<mapping class="com.ftf.model.VisitorUser" />
+		<mapping class="com.ftf.model.EmailAlert" />
+		<mapping class="com.ftf.model.ContactUs" />
+		<mapping class="com.ftf.model.Catageory" />
+		<mapping class="com.ftf.model.SubCatageory" />
+		<mapping class="com.ftf.model.CategoryAlias" />
+		<mapping class="com.ftf.model.SubCategoryAlias" />
+	    <mapping class="com.ftf.model.PaypalDetails" />
+	    <mapping class="com.ftf.model.OperatingHours" />
+	    <mapping class="com.ftf.model.CustomerComment" />
+	</session-factory>
+</hibernate-configuration>

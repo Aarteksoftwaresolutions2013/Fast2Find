@@ -1,0 +1,9 @@
+package com.ftf.service;
+
+import com.ftf.model.VisitorUser;
+
+public interface VisitorService {
+
+	public void addVisitorMessage(VisitorUser visitorUser);
+
+}

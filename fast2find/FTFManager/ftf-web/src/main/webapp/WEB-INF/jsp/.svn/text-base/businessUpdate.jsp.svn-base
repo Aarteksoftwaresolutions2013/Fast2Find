@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/styleb.css" media="all" />
+<title>Insert title here</title>
+</head>
+<body>
+<div id="busn-page" class="busn-page">
+					<h1>Event or Business Details<span class="headin-busi"> Pick Your Category</span></h1>
+					<div id="business-page-update" class="business-page-update">
+					<form:form modelAttribute="BusinessDetails" action="businessUpdateInfo.do" method="post" name="business-update" class="business-update" target="_top" autocomplete="off">
+					<ul class="first-busi-left">
+					
+					<li>
+					<label for="business-name"><span></span></label>
+					<form:input path="businessName" id="business-name" name="business-name"  placeholder="Business Name" required ="autofocus" maxlength="50" />
+					</li>
+					
+					<li>
+					<label for="max-capacity"><span></span></label>
+					<form:input path="maxCapacity" id="max-capacity" name="max-capacity"  placeholder="Max Capacity" required ="autofocus" maxlength="5" onkeyup="hourrVal(this)" />
+					</li>
+					
+					<li>
+					<label for="phone-number"><span></span></label>
+					<form:input path="businessPhoneNumber" id="phone-number" name="phone-number"  placeholder="Phone Number" required ="autofocus" maxlength="15" onkeyup="numeric(this)" />
+					</li>
+					
+					<li>
+					<label for="location-addres"><span></span></label>
+					<form:input path="address" id="location-addres" name="location-addres"  placeholder="Location Address" maxlength="150" required ="autofocus"/>
+					</li>
+					
+					<li>
+					<label for="city-name"><span></span></label>
+					<form:input path="cityName" id="city-name" name="city-name" placeholder="City" required ="autofocus" maxlength="20" onkeyup="onlyAlph(this)" />
+					</li>
+					
+					<li>
+					
+					<label for="state-province"><span></span></label>
+					<form:input path="stateName" id="state-province" name="state-province"  placeholder="State/Province" required ="autofocus" maxlength="20" onkeyup="onlyAlph(this)"/>
+					</li>
+					
+					<li>
+					<label for="zip-code"><span></span></label>
+					<form:input path="zipCode" id="zip-code" name="zip-code" placeholder="Zip Code" required ="autofocus" maxlength="10" onkeyup="Validate(this)" />
+					</li>
+					
+					<li>
+			        <label for="Country"><span></span></label>
+			          <form:select path="country" id="selectint" >
+				        <form:option value="0" label="Select Country"/>Select Country
+					  	    <c:forEach items="${country}" var="refCountry">
+						 <form:option value="${refCountry.countryId}" label="${refCountry.countryName}" />
+					</c:forEach>
+	          </form:select>
+			 </li>
+					<li>
+					<label for="q-b-f-p-p"><span></span></label>
+					<form:input path="quickBookingFeePerPerson" id="hr-opr" name="quickBookingFeePerPerson" placeholder="Quick Booking Fee Per Person" required ="autofocus" maxlength="5"/>
+					</li>
+					
+					<li>
+					<label for="q-b-f-pr-table"><span></span></label>
+					<form:input path="quickBookingFeePerTable" id="hr-opr" name="q-b-f-pr-table"  placeholder="Quick Booking Fee Per Table" required ="autofocus" maxlength="5" />
+					</li>
+					
+					<li>
+					<label for="hr-opr"><span></span></label>
+					<form:input path="hourOfOperation" id="hr-opr" name="hr-opr" placeholder="Hours of Operation" required ="autofocus" maxlength="5" onkeyup="hourrVal(this)"/>
+					</li>
+					
+					</ul>
+					<hr class="busin-page-lin" />
+					<ul class="right-checkbox-sct">
+					<li>
+					<input type="checkbox" id="club" name="eventCatagories" value="club" />
+					<label for="club"><span></span>Club</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Pub" name="eventCatagories" value="pub"/>
+					<label for="Pub"><span></span>Pub</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Bar" name="eventCatagories" value="Bar"/>
+					<label for="Bar"><span></span>Bar</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Restaurant" name="eventCatagories" value="Restaurant"/>
+					<label for="Restaurant"><span></span>Restaurant</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Comedy"  name="eventCatagories" value="Comedy"/>
+					<label for="Comedy"><span></span>Comedy</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Bands" name="eventCatagories"  value="Bands"/>
+					<label for="Bands"><span></span>Bands</label>
+					</li>
+					
+					<li>
+					<h2>Music or Genre typically played select all that apply:</h2>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Country" name="music" value="Country"/>
+					<label for="Country"><span></span>Country</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="hip-hop" name="music" value="hip-hop"/>
+					<label for="hip-hop"><span></span>Hip-Hop/Rap</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Jazz" name="music" value="Jazz"/>
+					<label for="Jazz"><span></span>Jazz</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="hous-electr-dnce" name="music" value="hous-electr-dnce"/>
+					<label for="hous-electr-dnce"><span></span>House/ Electronic/ Dance</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="dance-top"  name="music" value="dance-top" />
+					<label for="dance-top"><span></span>Dance/ Top 40</label>
+					</li>
+				
+					<li>
+					<input type="checkbox" id="Metal" name="music" value="Metal"/>
+					<label for="Metal"><span></span>Metal</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Rock" name="music" value="Rock"/>
+					<label for="Rock"><span></span>Rock</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="Classical" name="music" value="Classical" />
+					<label for="Classical"><span></span>Classical</label>
+					</li>
+					
+					<li>
+					<input type="checkbox" id="easy-list" name="music" value="easy-list" />
+					<label for="easy-list"><span></span>Easy Listening</label>
+					</li>
+					
+					</ul>
+					
+					<h4 class="detils">Please enter details of business via quick box or use calendar to input details</h4>
+					<h4>Business or Event Details Repeating:</h4>
+					
+					<ul class="center-layou-table">
+					<li>
+					<label for="months"><span></span></label>
+					
+					<input type="date" id="months" name="months" value=""/>
+					
+					</li>
+					
+					<li id="text-area">
+					<label for="tex-area"><span></span></label>
+					 <textarea name="message" rows="7" cols="30" id="tex-area"  placeholder="Type Here...."></textarea>
+					
+					</li>
+					
+					<li id="time-start">
+					<label for="time-strt" style="display:block; color:#d1d1d1"><span></span>Start Time</label>
+					<input type="time" id="time-strt" name="time-strt" />
+					</li>
+					
+					<li id="time-endz">
+					<label for="End-Time" style="display:block; color:#D1d1d1"><span></span>End Time</label>
+					<input type="time" id="End-Time" name="time-end" />
+					
+					</li>
+					
+					<li id="list-select">
+					<select name="list" id="list">
+					<option value="" style="display:none;">Daily Details Repeat Till</option>
+					<option>Lorem ipsum</option>
+					<option>Lorem ipsum copy</option>
+					</select>
+					
+					</li>
+					
+					<li class="check-all-tag">
+					
+					<input type="checkbox" id="all"  required/>
+					<label for="all"><span></span></label>
+					
+					</li>
+					
+					<li>
+					<span class="para">
+					
+					<p>Check here to allow Quick Booking , fee is 5% of booking.<p>
+					<p>This allows customers to book table instaneously through website.</p>
+					
+					</span></li>
+					
+					</ul>
+					
+					<ul id="read-only-inp">
+					<li>
+					<label for="name-a"><span></span></label>
+					<input type="text" id="name-a" placeholder="Tom Cruise in Concert"  readonly=""/>
+					</li>
+					
+					<li>
+					<label for="name-b"><span></span></label>
+					<input type="text" id="name-a" placeholder="Use this for additional information"  readonly=""/>
+					</li>
+					
+					<li>
+					<label for="name-b"><span></span></label>
+					<input type="text" id="name-a" placeholder="Use this for additional information"  readonly=""/>
+					</li>
+					
+					<li>
+					<label for="name-b"><span></span></label>
+					<input type="text" id="name-a" placeholder="Use this for additional information"  readonly=""/>
+					</li>
+					
+					<li>
+					<label for="submit-detils"><span></span></label>
+					
+					<input type="submit" id="submit-detils" value="Submit Details to Recieve Link to App"/>
+					</li>
+					
+					</ul>
+					</form:form>
+					</div><!----------end business-page-update---------->
+				</div><!----========================end page-content==========================---------->	
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+
+
+
+
+.example-heading h3
+{
+margin:0 0 10px;
+  background:#356AA0;
+
+}
+
+h3 a {
+  background:url("../../images/sprite.png") 15px 13px no-repeat;
+  display: block;
+  padding: 10px;
+  padding-left: 32px;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+h3.open  { background: #356AA0; }
+h3.open a { background-position: 13px -25px; }
+h3 + div { padding: 10px; }
+h2 + div,
+.example {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+/* Pre hide sections with JavaScript on
+--- */
+h3+div {
+  display: none;
+}
+
+/* CSS3 Animation example
+--- */
+#css3-animated-example h3 + div {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background: #F5F5F5;
+  display: block!important;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.3s ease;
+  moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#css3-animated-example .content {
+  padding: 10px;
+}
+
+#css3-animated-example h3.open + div {
+  height: auto;
+}
+
+/* Event example
+--- */
+pre#event-log {
+  background: #fafacc;
+  padding: 10px;
+  display: block;
+}

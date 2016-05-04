@@ -1,0 +1,249 @@
+@media screen and (min-width: 768px) and (max-width:1023px) {
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+html
+{
+margin:0 auto 0;
+padding:0;
+}
+
+body
+{
+margin:0 auto 0;
+padding:0;
+display:block;
+overflow:hidden;}
+
+.menu-wrap {
+width: 100%;
+overflow: hidden;
+padding-left: 12px;
+padding-right: 0px;
+}
+
+.sign_top {
+float: right;
+padding-right: 15px;
+}
+
+.logo_wrap {
+width: 97%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.menu-wrp ul li {
+padding: 0 25px 0 25px;
+}
+
+.find-location {
+width: 98%;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+div#right_side {
+float: right;
+width: 60%;
+}
+
+.find-location h2 {
+font-size: 2.4em;
+}
+
+.serch-locate input {
+width: 90%;
+}
+
+.serch-locate input:focus {
+width: 95%;
+}
+
+.custmr-btn a {
+background-size: 99%;
+font-size: 1.1em;
+padding-top: 18px;
+text-indent: 17px;
+}
+
+.custmr-btn {
+width: 100%;
+}
+
+
+input#datepick {
+width: 95%;
+}
+
+.submit-btns .sum-btn {
+width: 95%;
+}
+
+
+.submit-btns {
+float: left;
+margin: 0px;
+width: 50%;
+}
+
+.dropdown-btn {
+width: 48%;
+margin-right:9px
+}
+
+
+.min-contents {
+padding-left: 10px;
+padding-right: 10px;
+width: 95%;
+}	
+
+
+.contents-colums {
+float: left;
+width: 40%;
+}
+
+div#contens-colums-02 {
+width: 40%;
+}
+
+.contents-colums-03 {
+margin-left: 0px;
+width: 40%;
+}
+
+.contents-colums-04 {
+width: 40%;
+float: right;
+margin-right: 90px;
+}
+
+
+.contents-colums-05 {
+float: left;
+clear: both;
+width: 40%;
+}
+
+.contents-colums-06 {
+width: 40%;
+}
+
+
+.search-all {
+float: right;
+width: 32%;
+background-size: 100%;
+margin-right: 3em;
+top: 0px;
+}
+
+.provid-banner p {
+display: block;
+width: 50%;
+}
+
+.provid-banner h2 {
+display: block;
+width: auto;
+}
+
+.most-search-colums {
+width: 30%;
+margin-bottom: 25px;
+}
+
+
+.footer-widget {
+display: block;
+float: none;
+}
+
+.footer-inner {
+overflow: hidden;
+height: auto;
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+.recent-catagory {
+float: none;
+display: block;
+width: 97%;
+}
+
+.footer-widget {
+display: block;
+float: none;
+width: 97%;
+}
+
+.form {
+float: left;
+display: block;
+width: 100%;
+}
+
+.form input, textarea {
+width: 94%;
+}
+
+#submit {
+width: 50%;
+}
+
+.copy_right {
+text-align: left;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+
+div#footer {
+height: auto;
+}
+
+.clic_find {
+margin-top: 3cm;
+right: 0px;
+}
+
+
+.bussin-btn a {
+background-size: 99%;
+margin-top: 20px;
+padding-top: 19px;
+text-indent: 22px;
+}
+
+.bussin-btn {
+width: 100%;
+}
+
+
+/* fallback placeholder */
+.placeholder {
+font-size:0.8em !important;
+}
+/* webkit placeholder */
+::-webkit-input-placeholder {
+font-size:0.8em !important;
+}
+/* moz placeholder */
+:-moz-placeholder {
+font-size:0.8em !important;
+}
+
+:-ms-input-placeholder {
+font-size:0.8em !important;
+}
+
+
+
+
+
+}

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AARTEK-Branch/!svn/ver/1701/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp
+END
+feedback.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AARTEK-Branch/!svn/ver/1427/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/feedback.jsp
+END
+frontPage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/AARTEK-Branch/!svn/ver/1705/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/frontPage.jsp
+END
+customerSignUp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AARTEK-Branch/!svn/ver/1701/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/customerSignUp.jsp
+END
+security.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/AARTEK-Branch/!svn/ver/1678/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/security.jsp
+END
+signIn.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/AARTEK-Branch/!svn/ver/1678/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/signIn.jsp
+END
+help.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AARTEK-Branch/!svn/ver/1384/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/help.jsp
+END
+home.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/AARTEK-Branch/!svn/ver/1120/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/home.jsp
+END
+success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/AARTEK-Branch/!svn/ver/1691/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/success.jsp
+END
+testNotify.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/AARTEK-Branch/!svn/ver/1691/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/testNotify.jsp
+END
+businessUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AARTEK-Branch/!svn/ver/1701/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/businessUpdate.jsp
+END
+businessSignUp.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/AARTEK-Branch/!svn/ver/1383/Fast2Find/FTFManager/ftf-web/src/main/webapp/WEB-INF/jsp/businessSignUp.jsp
+END

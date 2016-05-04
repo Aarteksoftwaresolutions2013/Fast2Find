@@ -1,0 +1,18 @@
+package com.ftf.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ftf.model.CardDetails;
+import com.ftf.repository.PaypalInfoRepository;
+import com.ftf.service.PaypalInfoService;
+
+@Service
+public class PaypalInfoServiceImpl implements PaypalInfoService{
+@Autowired
+private PaypalInfoRepository paypalInfoRepository;
+	public void addPaypalInfo(CardDetails cardDetails) {
+		paypalInfoRepository.addPaypalInfo(cardDetails);
+	}
+
+}

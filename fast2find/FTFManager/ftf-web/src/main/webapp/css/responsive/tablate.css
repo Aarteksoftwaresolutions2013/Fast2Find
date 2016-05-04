@@ -1,0 +1,89 @@
+@media screen and (min-width: 1024px) and (max-width:1200px){
+/* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
+
+
+body
+{
+display:block;
+overflow:hidden;
+margin:0 auto 0;
+padding:0;}
+
+.menu-wrap {
+width: 100%;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.sign_top {
+text-align: right;
+margin-right: 15px;
+
+}
+
+
+.logo {
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.social-media {
+padding-right: 12px;
+padding-left: 12px;
+}
+
+.social-media .call-us {
+text-align: left;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+.clic_find {
+margin-top: 3cm;
+right: 15px;
+}
+
+div#find-location {
+padding-left: 20px;
+}
+
+.bussin-btn {
+margin-top: 22px;
+}
+
+.min-contents {
+padding-right: 20px;
+padding-left: 20px;
+width: 97%;
+}
+.search-all{
+background-size: 100%;
+width: 25%;
+margin-right: 4em;
+}
+
+.footer {
+height: auto;
+}
+
+.footer-inner {
+overflow: hidden;
+height: auto;
+}
+
+.footer-inner {
+overflow: hidden;
+height: auto;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.form {
+width: 32%;
+}
+
+.copy_right {
+width: 97%;
+}
+
+}
